@@ -24,28 +24,36 @@ align-items: center;
 
 nav ul {
 list-style-type: none;
+align-items: center;
 }
 
 nav ul li {
 display: inline;
+font-size: 220%;
+margin-left: 0;
+margin-right: 0;
 }
 
 /*links within the nav*/
 .link {
-
+color: white;
+text-align: center;
+margin-left: -.3%;
+margin-right: -.3%;
+padding-left: 3%;
+padding-right: 3%
 }
 
 #html-link {
-  color: red;
-  background-color: black;
+  background-color: red;
 }
 
 #css-link {
-
+background-color: green;
 }
 
 #js-link {
-
+background-color: blue;
 }
 
 .search-bar {
