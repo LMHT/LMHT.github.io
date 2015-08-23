@@ -1,0 +1,19 @@
+body {
+
+}
+
+li {
+  margin: 15px;
+}
+
+#tag-a, #tag-body {
+  display:none;
+}
+
+.droplist {
+  width: 15%;
+  margin: 0 auto;
+}
+select {
+  width: 100%;
+}
