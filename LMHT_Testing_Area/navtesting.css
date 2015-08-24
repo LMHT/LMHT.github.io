@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto|Lato|Montserrat|Roboto+Mono);
+body {
+  font-family: 'Lato', sans-serif;
+}
+nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    display: inline;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 200px;
+    color: #FFFFFF;
+    /*background-color: blue;*/
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+/*a:hover, a:active {
+    background-color: #7A991A;
+}*/
+
+#html-link {
+  background-color: #c0392b;
+}
+
+#html-link a:hover, #html-link a:active {
+  background-color: #e74c3c;
+}
+
+#css-link {
+  background-color: #27ae60;
+}
+
+#css-link a:hover, #css-link a:active {
+  background-color: #2ecc71;
+}
+
+#js-link {
+  background-color: #2980b9;
+}
+
+#js-link a:hover, #js-link a:active {
+  background-color: #3498db;
+}
