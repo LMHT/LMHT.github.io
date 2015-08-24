@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300,300italic|Roboto+Mono);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  background: #3498db;
+}
+
+.inside {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2rem;
+}
+strong {
+  font-weight: 700;
+}
+
+.site-header {
+  background: #2980b9;
+  color: white;
+  padding: 2rem 0;
+  margin: 0 0 2rem 0;
+}
+.site-header-inside {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.site-title p {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+.header-meta,
+.site-title {
+  width: 300px;
+}
+
+nav ul {
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  float: left;
+  display: inline;
+  font-size: 220%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*links within the nav*/
+.link {
+  color: white;
+  text-align: center;
+}
+
+#html-link {
+  background-color: red;
+}
+
+#css-link {
+  background-color: green;
+}
+
+#js-link {
+  background-color: blue;
+}
+
+.article {
+  background: white;
+  margin: 0 0 3rem 0;
+}
+.article-header {
+  padding: 1rem;
+}
+.article-header audio {
+  float: right;
+}
+
+.site-search {
+  text-align: center;
+  margin: 0 0 2rem 0;
+  > * {
+    vertical-align: middle;
+  }
+}
+input[type=search] {
+  border: 0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1.4rem;
+}
+
+.how-to-remember {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.how-to-remember-box {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: calc(50% - 0.5rem);
+  > h4 {
+    background: #4872fb;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin: -1rem -1rem 0.5rem -1rem;
+  }
+}
+
+.code-example {
+  /*background: #222;*/
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  font-family: "Roboto-Mono",monaco, monospace;
+  font-size: 0.8rem;
+  strong {
+    color: #red;
+  }
+}
+
+.site-footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/*#logo {
+  display: inline;
+}*/
