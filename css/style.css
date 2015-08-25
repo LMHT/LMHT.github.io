@@ -11,10 +11,20 @@ body {
   line-height: 1.45;
   background: #3498db;
 }
-
-.inside {
+.searchlabel {
+  text-align: center
+}
+#tag-a, #tag-body {
   max-width: 900px;
   margin: 0 auto;
+  display: none;
+}
+.droplist {
+  width: 15%;
+  margin: 0 auto;
+}
+select {
+  width: 100%;
 }
 
 h1, h2 {
@@ -48,7 +58,10 @@ strong {
 .site-title {
   width: 300px;
 }
-
+img {
+  display: block;
+  text-align: center;
+}
 nav ul {
   list-style-type: none;
   align-items: center;
@@ -143,3 +156,5 @@ input[type=search] {
 /*#logo {
   display: inline;
 }*/
+
+
