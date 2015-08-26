@@ -4,15 +4,17 @@
   margin: 0;
   padding: 0;
 }
-
+/* #226baa  (hex code for logo) */
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   line-height: 1.45;
-  background: #3498db;
+  background: #48A2DF;
 }
 .searchlabel {
-  text-align: center
+  text-align: center;
+  margin: 0, 1em, 0, 0;
+  p
 }
 #tag-a, #tag-body {
   max-width: 900px;
@@ -34,6 +36,12 @@ h1, h2 {
 h2 {
   font-size: 2rem;
 }
+
+h4 {
+  font-size: 1em;
+  padding: 1em;
+}
+
 strong {
   font-weight: 700;
 }
@@ -41,14 +49,15 @@ strong {
 .site-header {
   background: #2980b9;
   color: white;
-  padding: 2rem 0;
-  margin: 0 0 2rem 0;
+  padding: 1rem 0;
+  margin: 2em 2em 2rem 2em;
 }
 .site-header-inside {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
+  padding-left: 3em;
 }
 .site-title p {
   font-size: 0.85rem;
@@ -56,7 +65,7 @@ strong {
 }
 .header-meta,
 .site-title {
-  width: 300px;
+  width: 100%;
 }
 img {
   display: block;
@@ -152,9 +161,5 @@ input[type=search] {
   text-align: center;
   margin: 2rem 0;
 }
-
-/*#logo {
-  display: inline;
-}*/
 
 
