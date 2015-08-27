@@ -1,174 +1,65 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>LMHT</title>
-  <link type='text/css' href='css/style.css' rel ='stylesheet'/>
+  <link type='text/css' href='css/style.css' rel='stylesheet'/>
   <link rel='stylesheet' href='js/jquery-ui-1.11.4.custom/jquery-ui.min.css'/>
 </head>
+
 <body>
+
   <header class="site-header">
 
-      <div class="site-header-inside inside">
-          <div class="site-title">
-            <a href="/" id="logo">
-              <img src="img/lmht-logo.svg" alt="LMHT Logo">
-            </a>
-            <!-- <h1>LMHT = HTML</h1>
-            <p>LMHT stands for "Lenguaje de Marca de Hiper-Texto" which translates to "Hyper Text Markup Language", or "HTML" in English.</p> -->
-          </div>
+    <div class="site-header-inside inside">
 
-          <div class="header-meta">
-            Helping Spanish Speakers Understand Web Development Terminology<br>Ayudando a Hablantes del Espa&ntilde;ol a Aprender Terminologia de Desarollo del Web
-          </div>
-          <!-- <nav>
-            <ul>
-              <li class="link" id="html-link">HTML</li>
-              <li class="link" id="css-link">CSS</li>
-              <li class="link" id="js-link">JavaScript</li>
-            </ul>
-          </nav> -->
+      <div class="site-title">
+        <a href="/" id="logo">
+          <img src="img/lmht-logo.svg" alt="LMHT Logo">
+        </a>
       </div>
-    </header>
-    
-        <h4 class='searchlabel'>Search for an element to view definition, memorization aids, audio pronunciation, and code sample</h4>
-    
 
-<!-- <nav>
-  <ul>
-    <li class="link" id="html-link">HTML</li>
-    <li class="link" id="css-link">CSS</li>
-    <li class="link" id="js-link">JavaScript</li>
-  </ul>
-</nav> -->
+      <div class="header-meta">
+        Helping Spanish Speakers Understand Web Development Terminology<br>Ayudando a Hablantes del Espa&ntilde;ol a Aprender Terminologia de Desarollo del Web
+      </div>
 
-    <div class='droplist'>
-        <label for='tags'></label>
-        <select name='tags' id='tags'>
-            <option value='select'>select tag</option>
-            <option value='tag-a'>&lt;a></option>
-            <option value='tag-body'>&lt;body></option>
-            <option value='tag-footer'>&lt;footer></option>
-            <option value='tag-header'>&lt;header></option>
-            <option value='tag-p'>&lt;p></option>
-        </select>
-    </div>  
+    </div>
 
+  </header>
 
-    <main>
-        <div id='select'></div>
+  <h4 class='searchlabel'>Search for an element to view definition, memorization aids, audio pronunciation, and code sample</h4>
 
-        <div id='tag-a'>
+  <div class='droplist'>
+    <label for='tags'></label>
+    <select name='tags' id='tags'>
+      <option value='select'>select tag</option>
+      <option value='a.html'>&lt;a></option>
+      <option value='body.html'>&lt;body></option>
+      <option value='footer.html'>&lt;footer></option>
+      <option value='header.html'>&lt;header></option>
+      <option value='div.html'>&lt;div></option>
+      <option value='p.html'>&lt;p></option>
+    </select>
+  </div>
 
-            <article class="article">
+  <main>
 
-              <header class="article-header">
+    <div class="main-inside inside" id="main">
 
-                <h2>
-                  <code>
-                    &lt;a>
-                  </code>
-                  <audio src="#" controls></audio>
-                </h2>
+    </div>
 
-                <div class="base-words">
+  </main>
 
-                  <div class="base-word-line">
-                    English base word: <strong>Anchor</strong>
-                  </div>
+  <footer class="site-footer">
+    Project by Team Open Brace, From YWebCA Summer 2015.
+  </footer>
 
-                  <div class="base-word-line">
-                    Spanish word equivalent: <strong>Divisi&oacute;n</strong>
-                  </div>
+  <script src='js/jquery-1.11.3.min.js'></script>
+  <script src='js/jquery-ui-1.11.4.custom/external/jquery/jquery.js'></script>
+  <script src='js/jquery-ui-1.11.4.custom/jquery-ui.min.js'></script>
+  <script src='js/scripts.js'></script>
 
-                </div>
-
-              </header>
-
-              <div class="how-to-remember">
-
-                <div class="how-to-remember-box how-to-remember-spanish">
-                  <h4>&iquest;C&oacute;mo recordar?</h4>
-                  <p>'div' is probablemente el m&aacute;s generic&oacute; elemento de HTML que hay. No tiene que tener un significado inherente o difundir cualquier estilo. Es ultilizado simplemente a "dividir" (o juntar) el contenido dentro de una pagina.</p>
-                </div>
-
-                <div class="how-to-remember-box how-to-remember-english">
-                  <h4>How to Remember</h4>
-                  <p>A "div" is probably the most generic HTML element there is! It doesn't have any inherint meaning or impart any styles. It is used simply to "divide" (or group together) content. </p>
-                </div>
-
-              </div>
-
-              <pre class="code-example"><code>&lt;h1>This is a cool thing.&lt;/h1>
-              <strong>&lt;div class="subhead"></strong>
-                   &lt;p>stuff&lt;/p>
-              <strong>&lt;/div></strong></code></pre>
-
-            </article>
-
-        </div>
-
-        <div id='tag-body'>
-
-
-          <article class="article">
-
-            <header class="article-header">
-
-              <h2>
-                <code>
-                  &lt;body>
-                </code>
-                <audio src="#" controls></audio>
-              </h2>
-
-              <div class="base-words">
-
-                <div class="base-word-line">
-                  English base word: <strong>Body</strong>
-                </div>
-
-                <div class="base-word-line">
-                  Spanish word equivalent: <strong>Descanso/Romper</strong>
-                </div>
-
-              </div>
-
-            </header>
-
-            <div class="how-to-remember">
-
-              <div class="how-to-remember-box how-to-remember-spanish">
-                <h4>&iquest;C&oacute;mo recordar?</h4>
-                <p>"Break" es descanso en ingl&eacute;s y tambi&eacute;n es el verbo para romper. En este caso, estamos rompiendo un bloque de texto, donde creamos un nuevo linea de texto.</p>
-              </div>
-
-              <div class="how-to-remember-box how-to-remember-english">
-                <h4>How to remember</h4>
-                <p>A "break" tag is named that way because it "breaks" a line of text. Anything after the &lt;br> tag will be wrapped down onto the next line.</p>
-              </div>
-
-            </div>
-
-            <pre class="code-example"><code>&lt;address>
-         YWebCA<strong>&lt;br></strong>
-         123 Main St.<strong>&lt;br></strong>
-         Madison, WI 53288
-      &lt;/address></code></pre>
-
-          </article>
-
-        </div>
-
-    </main>
-
-    <footer class="site-footer">
-      Project by Team Open Brace, From YWebCA Summer 2015.
-    </footer>
-    <script src='js/jquery-1.11.3.min.js'></script>
-    <script src='js/jquery-ui-1.11.4.custom/external/jquery/jquery.js'></script>
-    <script src='js/jquery-ui-1.11.4.custom/jquery-ui.min.js'></script>
-    <script src='js/scripts.js'></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300,300italic|Roboto+Mono);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,17 +14,11 @@ body {
 }
 .searchlabel {
   text-align: center;
-  margin: 0, 1em, 0, 0;
-  p
 }
-#tag-a, #tag-body {
-  max-width: 900px;
-  margin: 0 auto;
-  display: none;
-}
+
 .droplist {
   width: 15%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 select {
   width: 100%;
@@ -50,14 +45,11 @@ strong {
   background: #2980b9;
   color: white;
   padding: 1rem 0;
-  margin: 2em 2em 2rem 2em;
+  margin: 0 0 2rem 0;
 }
-.site-header-inside {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-left: 3em;
+.inside {
+  max-width: 900px;
+  margin: 0 auto;
 }
 .site-title p {
   font-size: 0.85rem;

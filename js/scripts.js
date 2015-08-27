@@ -1,6 +1,19 @@
 $('#tags').selectmenu({
+
   select: function() {
-  var content = $(this).val();
-  $('#' + content).fadeIn(1000).siblings().hide();
+
+    var fileChoice = $(this).val();
+
+    $.ajax({
+
+      url: "elements/" + fileChoice
+
+    }).success(function(html) {
+
+      $("#main").html(html);
+
+    })
+
+
   }
 });
