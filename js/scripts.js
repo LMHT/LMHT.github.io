@@ -1,12 +1,31 @@
-$('#tags').selectmenu({
+var app = {
 
-  select: function() {
+  init: function() {
+    this.setUpMenu();
+    this.setUpFirstView();
+  },
 
-    var fileChoice = $(this).val();
+  setUpMenu: function() {
+
+    this.menu = $('#tags').selectmenu({
+
+      select: function() {
+
+        var url = $(this).val();
+
+        app.getSection(url);
+
+      }
+
+    });
+
+  },
+
+  getSection: function(url) {
 
     $.ajax({
 
-      url: "elements/" + fileChoice
+      url: "elements/" + url
 
     }).success(function(html) {
 
@@ -14,6 +33,16 @@ $('#tags').selectmenu({
 
     });
 
+  },
+
+  setUpFirstView: function() {
+
+    var initialValue = this.menu.val();
+
+    this.getSection(initialValue);
+
   }
 
-});
+};
+
+app.init();
