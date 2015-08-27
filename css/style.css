@@ -195,3 +195,12 @@ input[type=search] {
 h4 {
   color: #ddd;
 }
+
+.site-footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #eee;
+}
