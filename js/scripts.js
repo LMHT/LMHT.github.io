@@ -12,8 +12,8 @@ $('#tags').selectmenu({
 
       $("#main").html(html);
 
-    })
-
+    });
 
   }
+
 });
