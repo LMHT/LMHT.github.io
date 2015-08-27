@@ -4,7 +4,7 @@ A project by Team Open Brace in YWebCA.
 
 ## Setup
 
-Because this project uses `$.ajax`, you have have a a local webserver for this to work properly on a local machine. If you have OS X:
+Because this project uses `$.ajax`, you have to have a local webserver for this to work properly on a local machine. If you have OS X:
 
 1. `cd` to the project folder
 1. Type `python -m SimpleHTTPServer`
