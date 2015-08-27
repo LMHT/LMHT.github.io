@@ -5,17 +5,17 @@
   margin: 0;
   padding: 0;
 }
-/* #226baa  (hex code for logo) */
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   line-height: 1.45;
   background: #48A2DF;
 }
+
 .searchlabel {
   text-align: center;
 }
-
 .droplist {
   width: 15%;
   margin: 0 auto 20px;
@@ -31,25 +31,24 @@ h1, h2 {
 h2 {
   font-size: 2rem;
 }
-
 h4 {
   font-size: 1em;
   padding: 1em;
 }
-
 strong {
   font-weight: 700;
+}
+
+.inside {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .site-header {
   background: #2980b9;
   color: white;
-  padding: 1rem 0;
+  padding: 20px 0 0;
   margin: 0 0 2rem 0;
-}
-.inside {
-  max-width: 900px;
-  margin: 0 auto;
 }
 .site-title p {
   font-size: 0.85rem;
@@ -58,41 +57,24 @@ strong {
 .header-meta,
 .site-title {
   width: 100%;
+  text-align: center;
 }
-img {
+#logo img {
+  max-width: 700px;
+  margin: 0 auto 20px;
   display: block;
-  text-align: center;
 }
-nav ul {
-  list-style-type: none;
-  align-items: center;
+.header-meta p {
+  padding: 10px;
 }
-
-nav ul li {
-  float: left;
-  display: inline;
-  font-size: 220%;
-  margin-left: 0;
-  margin-right: 0;
+.header-meta p:nth-child(1) {
+  background: rgba(0, 0, 0, 0.1);
+}
+.header-meta p:nth-child(2) {
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 
-/*links within the nav*/
-.link {
-  color: white;
-  text-align: center;
-}
-
-#html-link {
-  background-color: red;
-}
-
-#css-link {
-  background-color: green;
-}
-
-#js-link {
-  background-color: blue;
-}
 
 .article {
   background: white;
@@ -105,20 +87,6 @@ nav ul li {
   float: right;
 }
 
-.site-search {
-  text-align: center;
-  margin: 0 0 2rem 0;
-  > * {
-    vertical-align: middle;
-  }
-}
-input[type=search] {
-  border: 0;
-  border-radius: 10px;
-  font-family: inherit;
-  font-size: 1.4rem;
-}
-
 .how-to-remember {
   display: flex;
   padding: 1rem;
@@ -128,25 +96,24 @@ input[type=search] {
   border: 1px solid #ccc;
   padding: 1rem;
   width: calc(50% - 0.5rem);
-  > h4 {
-    background: #4872fb;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    margin: -1rem -1rem 0.5rem -1rem;
-  }
+}
+.how-to-remember-box h4 {
+  background: #4872fb;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  margin: -1rem -1rem 0.5rem -1rem;
 }
 
 .code-example {
-  /*background: #222;*/
   background: #2c3e50;
   color: white;
   padding: 1rem;
-  font-family: "Roboto-Mono",monaco, monospace;
+  font-family: "Roboto-Mono", monaco, monospace;
   font-size: 0.8rem;
-  strong {
-    color: #red;
-  }
+}
+.code-example strong {
+  color: yellow;
 }
 
 .site-footer {
