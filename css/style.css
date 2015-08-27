@@ -158,6 +158,9 @@ input[type=search] {
 =======
 >>>>>>> 38903f9641a4dd65a0f14759365e60fa79b1965e
 .how-to-remember {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 1rem;
   justify-content: space-between;
