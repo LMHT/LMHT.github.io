@@ -11,18 +11,22 @@ body {
   line-height: 1.45;
   background: #3498db;
 }
+
 .searchlabel {
   text-align: center
 }
+
 #tag-a, #tag-body {
   max-width: 900px;
   margin: 0 auto;
   display: none;
 }
+
 .droplist {
   width: 15%;
   margin: 0 auto;
 }
+
 select {
   width: 100%;
 }
@@ -31,9 +35,11 @@ h1, h2 {
   font-size: 3rem;
   font-weight: 700;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 strong {
   font-weight: 700;
 }
@@ -44,24 +50,29 @@ strong {
   padding: 2rem 0;
   margin: 0 0 2rem 0;
 }
+
 .site-header-inside {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
 }
+
 .site-title p {
   font-size: 0.85rem;
   color: #ddd;
 }
+
 .header-meta,
 .site-title {
   width: 300px;
 }
+
 img {
   display: block;
   text-align: center;
 }
+
 nav ul {
   list-style-type: none;
   align-items: center;
@@ -97,9 +108,11 @@ nav ul li {
   background: white;
   margin: 0 0 3rem 0;
 }
+
 .article-header {
   padding: 1rem;
 }
+
 .article-header audio {
   float: right;
 }
@@ -107,7 +120,7 @@ nav ul li {
 .site-search {
   text-align: center;
   margin: 0 0 2rem 0;
-  > * {
+  > * { /*affects the immediate children of the 'site-search' class*/
     vertical-align: middle;
   }
 }
@@ -156,5 +169,3 @@ input[type=search] {
 /*#logo {
   display: inline;
 }*/
-
-
