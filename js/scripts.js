@@ -11,9 +11,14 @@ var app = {
 
       select: function() {
 
-        var url = $(this).val();
+        var el = $(this);
 
-        app.getSection(url);
+        $("#main").animate({
+          opacity: 0
+        }, 500, function() {
+          var url = el.val();
+          app.getSection(url);
+        });
 
       }
 
@@ -29,7 +34,13 @@ var app = {
 
     }).success(function(html) {
 
-      $("#main").html(html);
+      // hide spinner
+
+      $("#main")
+        .html(html)
+        .animate({
+          opacity: 1
+        }, 500);
 
     });
 
