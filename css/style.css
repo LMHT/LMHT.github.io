@@ -15,11 +15,22 @@ body {
 
 .searchlabel {
   text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
+
+#tag-a, #tag-body {
+  max-width: 900px;
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+}
+
 .droplist {
   width: 15%;
   margin: 0 auto 20px;
 }
+
 select {
   width: 100%;
 }
@@ -28,13 +39,18 @@ h1, h2 {
   font-size: 3rem;
   font-weight: 700;
 }
+
 h2 {
   font-size: 2rem;
 }
+<<<<<<< HEAD
+
+=======
 h4 {
   font-size: 1em;
   padding: 1em;
 }
+>>>>>>> 38903f9641a4dd65a0f14759365e60fa79b1965e
 strong {
   font-weight: 700;
 }
@@ -50,12 +66,43 @@ strong {
   padding: 20px 0 0;
   margin: 0 0 2rem 0;
 }
+<<<<<<< HEAD
+
+.site-header-inside {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
 .site-title p {
   font-size: 0.85rem;
   color: #ddd;
 }
+
 .header-meta,
 .site-title {
+<<<<<<< HEAD
+  width: 300px;
+}
+
+img {
+  display: block;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  float: left;
+  display: inline;
+  font-size: 220%;
+  margin-left: 0;
+  margin-right: 0;
+=======
   width: 100%;
   text-align: center;
 }
@@ -63,6 +110,7 @@ strong {
   max-width: 700px;
   margin: 0 auto 20px;
   display: block;
+>>>>>>> 38903f9641a4dd65a0f14759365e60fa79b1965e
 }
 .header-meta p {
   padding: 10px;
@@ -80,14 +128,33 @@ strong {
   background: white;
   margin: 0 0 3rem 0;
 }
+
 .article-header {
   padding: 1rem;
 }
+
 .article-header audio {
   float: right;
 }
 
-.how-to-remember {
+<<<<<<< HEAD
+.site-search {
+  text-align: center;
+  margin: 0 0 2rem 0;
+  > * { /*affects the immediate children of the 'site-search' class*/
+    vertical-align: middle;
+  }
+}
+input[type=search] {
+  border: 0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1.4rem;
+}
+
+=======
+>>>>>>> 38903f9641a4dd65a0f14759365e60fa79b1965e
+.how-to-remember, .definition {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,12 +162,13 @@ strong {
   padding: 1rem;
   justify-content: space-between;
 }
-.how-to-remember-box {
+.how-to-remember-box, .definition-box {
   border: 1px solid #ccc;
   padding: 1rem;
   width: calc(50% - 0.5rem);
+  margin-bottom: 40px;
 }
-.how-to-remember-box h4 {
+.how-to-remember-box h4, .definition h4 {
   background: #4872fb;
   color: white;
   padding: 0.5rem 1rem;
@@ -115,6 +183,7 @@ strong {
   font-family: "Roboto-Mono", monaco, monospace;
   font-size: 0.8rem;
 }
+
 .code-example strong {
   color: yellow;
 }
@@ -122,6 +191,30 @@ strong {
 .site-footer {
   text-align: center;
   margin: 2rem 0;
+  color: white;
+}
+h4 {
+  color: #ddd;
 }
 
+.site-footer a {
+  color: #ddd;
+  text-decoration: none;
+}
 
+.site-footer a:hover {
+  color: #eee;
+}
+
+.header-meta p {
+  text-align: center;
+}
+
+.definition code, .how-to-remember code {
+  color: #333;
+  font-weight: bold;
+}
+
+.definition .code-example code, .how-to-remember .code-example code {
+  color: white;
+}
