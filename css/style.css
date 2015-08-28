@@ -14,17 +14,16 @@ body {
 }
 
 .searchlabel {
-<<<<<<< HEAD
-  text-align: center
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 #tag-a, #tag-body {
   max-width: 900px;
   margin: 0 auto;
   display: none;
-=======
   text-align: center;
->>>>>>> 38903f9641a4dd65a0f14759365e60fa79b1965e
 }
 
 .droplist {
@@ -167,6 +166,7 @@ input[type=search] {
   border: 1px solid #ccc;
   padding: 1rem;
   width: calc(50% - 0.5rem);
+  margin-bottom: 40px;
 }
 .how-to-remember-box h4, .definition h4 {
   background: #4872fb;
@@ -203,4 +203,8 @@ h4 {
 
 .site-footer a:hover {
   color: #eee;
+}
+
+.header-meta p {
+  text-align: center;
 }
