@@ -18,14 +18,12 @@ body {
   text-align: center;
   color: white;
 }
-
 .droplist {
-  width: 15%;
   margin: 0 auto 20px;
+  text-align: center;
 }
-
 select {
-  width: 100%;
+  width: 300px;
 }
 
 h1, h2 {
