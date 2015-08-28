@@ -34,8 +34,6 @@ var app = {
 
     }).success(function(html) {
 
-      // hide spinner
-
       $("#main")
         .html(html)
         .animate({
