@@ -183,6 +183,7 @@ input[type=search] {
   font-family: "Roboto-Mono", monaco, monospace;
   font-size: 0.8rem;
 }
+
 .code-example strong {
   color: yellow;
 }
@@ -207,4 +208,13 @@ h4 {
 
 .header-meta p {
   text-align: center;
+}
+
+.definition code, .how-to-remember code {
+  color: #333;
+  font-weight: bold;
+}
+
+.definition .code-example code, .how-to-remember .code-example code {
+  color: white;
 }
