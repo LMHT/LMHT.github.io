@@ -10,6 +10,17 @@
   
 ---
 
+**HTML**
 
+ English name: Hypertext Markup Language
+ Spanish Name: Lenguaje de Marcas Hipertexto
+
+  <p> The <code>&lt;html&gt;</code> element is the root element of an HTML document.  Usually it is the very first line of the document, after <code>&lt;!DOCTYPE&gt;</code> as it’s the first element, however it can be preceded by comments.</p>
   
- 
+  <p> El elemento <code>&lt;html&gt;</code> es el elemento raíz de un documento HTML.  Generalmente, es la primera línea del documento después de <code>&lt;!DOCTYPE&gt;</code> como su primer elemento, sin embargo, puede estar precedido por comentarios.</p>
+  
+  <p>Always remember to put this first by identifying what you are making.  You’re making an HTML document so put <code>&lt;html&gt;</code> first.</p>
+
+  <p>Recuerde siempre poner esto primero para identificar lo que está haciendo. Está haciendo un documento HTML así que ponga <code>&lt;html&gt;</code> primero.</p>
+
+---
