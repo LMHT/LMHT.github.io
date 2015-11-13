@@ -19,7 +19,6 @@ One last thing. Although you don't style anything when adding an html doc to our
 1. Go to [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
 
 
-
 HTML Template down here:
 
 ```
