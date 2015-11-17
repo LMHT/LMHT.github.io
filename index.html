@@ -5,7 +5,47 @@
   <meta charset="UTF-8">
   <title>LMHT</title>
   <link type='text/css' href='css/style.css' rel='stylesheet'/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+      // grab the initial top offset of the navigation 
+        var stickyNavTop = $('.nav').offset().top;
+        
+        // our function that decides weather the navigation bar should have "fixed" css position or not.
+        var stickyNav = function(){
+          var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+               
+          // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+          // otherwise change it back to relative
+          if (scrollTop > stickyNavTop) { 
+              $('.nav').addClass('sticky');
+          } else {
+              $('.nav').removeClass('sticky'); 
+          }
+      };
+
+      stickyNav();
+      // and run it again every time you scroll
+      $(window).scroll(function() {
+        stickyNav();
+      });
+    });
+  
+
+
+</script>
+
+
   <link rel='stylesheet' href='js/jquery-ui-1.11.4.custom/jquery-ui.min.css'/>
+
+
+
+
+
 </head>
 
 <body>
@@ -28,6 +68,20 @@
     </div>
 
   </header>
+
+
+
+        <nav class="nav">
+          <ul>
+            <li><textarea rows="2" cols="40">
+                place holder for comobo box
+                </textarea>
+            </li>
+          </ul>
+        </nav>
+      
+  
+
 
   <h4 class='searchlabel'>Select an element to view definition, memorization aids, audio pronunciation, and code sample:<br>Selecione un elemento para ver la definici&oacute;n, ayuda para recordar, la pronunciaci&oacute;n con audio, y ejemplos de como usar la etiqueta:</h4>
 
