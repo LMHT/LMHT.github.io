@@ -8,9 +8,16 @@ var app = {
   },
 
   setUpMenu: function() {
+    $("#tags").combobox();
 
+    $('#tags').change(function() {
+      var $selected = $(this);
+      var url = $selected.val();
+
+      app.getSection(url);
+    })
     // jQuery UI specific setup function
-    $('#tags').selectmenu({
+    /*$('#tags').selectmenu({
 
       select: function() {
 
@@ -27,7 +34,7 @@ var app = {
       }
 
     });
-
+*/
   },
 
   getSection: function(url) {
@@ -72,7 +79,7 @@ var app = {
       $("option[value='" + url + "']").prop("selected", true);
 
       // Refresh jQuery UI menu
-      $('#tags').selectmenu("refresh");
+      //$('#tags').selectmenu("refresh");
 
       // Load that element
       this.getSection(url);
@@ -83,4 +90,6 @@ var app = {
 
 };
 
-app.init();
+$(function() {
+  app.init();
+});
