@@ -17,33 +17,51 @@ body {
 
 /*sitckybar*/
 
-.sticky {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
+
+
+
+
+
+
+nav {
+  z-index: 500;
+background-color: rgba(0, 0, 0, 0.5);
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
-ul {
-  margin: 0px;
-  padding: 0px;
+.nav-placeholder {
+  margin: 0 0 10px 0;
 }
-.nav ul{
-    background:rgba(30, 30, 30, 0.8);
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.nav ul li {
-  display: inline-block;
-  color: #fff;
-}
-.nav ul li a {
+
+.fixed {
+  position: fixed;
+  top: 0;
   width: 100%;
-  padding: 1em 0em;
+background-color: rgba(0, 0, 0, 0.5);
 }
+
+.fixed .nav-inner {
+  padding: 0 0px;
+  
+}
+
+.fixed .nav-inner-most {
+  width: 100%;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 600px;
+}
+
+
 
 /*=============*/
 

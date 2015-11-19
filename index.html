@@ -5,43 +5,16 @@
   <meta charset="UTF-8">
   <title>LMHT</title>
   <link type='text/css' href='css/style.css' rel='stylesheet'/>
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 <script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-
-
-    $(document).ready(function() {
-      // grab the initial top offset of the navigation 
-        var stickyNavTop = $('.nav').offset().top;
-        
-        // our function that decides weather the navigation bar should have "fixed" css position or not.
-        var stickyNav = function(){
-          var scrollTop = $(window).scrollTop(); // our current vertical position from the top
-               
-          // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-          // otherwise change it back to relative
-          if (scrollTop > stickyNavTop) { 
-              $('.nav').addClass('sticky');
-          } else {
-              $('.nav').removeClass('sticky'); 
-          }
-      };
-
-      stickyNav();
-      // and run it again every time you scroll
-      $(window).scroll(function() {
-        stickyNav();
-      });
-    });
-  
+<link rel='stylesheet' href='js/jquery-ui-1.11.4.custom/jquery-ui.min.css'/>
 
 
-</script>
-
-
-  <link rel='stylesheet' href='js/jquery-ui-1.11.4.custom/jquery-ui.min.css'/>
-
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/stickynav.js"></script>
 
 
 
@@ -69,16 +42,23 @@
 
   </header>
 
-
-
-        <nav class="nav">
-          <ul>
-            <li><textarea rows="2" cols="40">
-                place holder for comobo box
-                </textarea>
+<div class="nav-placeholder" style="height: 42px;">
+  <nav class="">
+    <div class="nav-inner">
+      <div class="nav-inner-most">
+      <ul class="clearfix">
+          
+            <li><form action="form1">
+                  <input type="text" name="FirstName" value="Place holder"><br>
+                </form>
             </li>
           </ul>
-        </nav>
+       </div>
+     </div>
+  </nav>
+</div>
+
+
       
   
 
