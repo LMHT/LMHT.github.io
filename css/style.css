@@ -1,212 +1,206 @@
-
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300,300italic|Roboto+Mono);
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  line-height: 1.45;
-  background: #48A2DF;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.45;
+    background: #48A2DF;
 }
 
 
-/*sitckybar*/
-
-
-
-
-
-
+/*sitckybar-start*/
 
 nav {
-  z-index: 500;
-background-color: rgba(0, 0, 0, 0.5);
-padding-top: 10px;
-padding-bottom: 10px;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-placeholder {
-  margin: 0 0 10px 0;
+    margin: 0 0 10px 0;
 }
 
 .fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .fixed .nav-inner {
-  padding: 0 0px;
-  
+    padding: 0 0px;
 }
 
 .fixed .nav-inner-most {
-  width: 100%;
+    width: 100%;
 }
 
-
 nav ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-  list-style: none;
-  margin-left: 600px;
+    list-style: none;
+    margin-left: 600px;
 }
 
 
-
-/*=============*/
-
+/*stickybar-end*/
 
 .searchlabel {
-  text-align: center;
-  color: white;
-}
-.droplist {
-  margin: 0 auto 20px;
-  text-align: center;
-}
-select {
-  width: 300px;
+    text-align: center;
+    color: white;
 }
 
-h1, h2 {
-  font-size: 3rem;
-  font-weight: 700;
+.droplist {
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+select {
+    width: 300px;
+}
+
+h1,
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h4 {
-  font-size: 1em;
-  padding: 1em;
+    font-size: 1em;
+    padding: 1em;
 }
 
 strong {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .inside {
-  max-width: 900px;
-  margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .site-header {
-  background: #2980b9;
-  color: white;
-  padding: 20px 0 0;
-  margin: 0 0 2rem 0;
+    background: #2980b9;
+    color: white;
+    padding: 20px 0 0;
+    margin: 0 0 2rem 0;
 }
 
 .site-title p {
-  font-size: 0.85rem;
-  color: #ddd;
+    font-size: 0.85rem;
+    color: #ddd;
 }
 
 .header-meta,
 .site-title {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 #logo img {
-  max-width: 450px;
-  margin: 0 auto 20px;
-  display: block;
+    max-width: 450px;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 .header-meta p {
-  padding: 10px;
+    padding: 10px;
 }
 
 .header-meta p:nth-child(1) {
-  background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .header-meta p:nth-child(2) {
-  background: rgba(0, 0, 0, 0.2);
-  margin: 0;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0;
 }
 
-
 .article {
-  background: white;
-  margin: 0 0 3rem 0;
+    background: white;
+    margin: 0 0 3rem 0;
 }
 
 .article-header {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .article-header audio {
-  float: right;
+    float: right;
 }
 
-.how-to-remember, .definition {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.how-to-remember,
+.definition {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
-.how-to-remember-box, .definition-box {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  width: calc(50% - 0.5rem);
+.how-to-remember-box,
+.definition-box {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: calc(50% - 0.5rem);
 }
 
-.how-to-remember-box h4, .definition-box h4 {
-  background: #4872fb;
-  color: white;
-  padding: 0.5rem 1rem;
-  font-weight: 700;
-  margin: -1rem -1rem 0.5rem -1rem;
+.how-to-remember-box h4,
+.definition-box h4 {
+    background: #4872fb;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin: -1rem -1rem 0.5rem -1rem;
 }
 
 .code-example {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem;
-  font-family: "Roboto-Mono", monaco, monospace;
-  font-size: 0.8rem;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    font-family: "Roboto-Mono", monaco, monospace;
+    font-size: 0.8rem;
 }
 
 .code-example strong {
-  color: yellow;
+    color: yellow;
 }
 
 .site-footer {
-  text-align: center;
-  margin: 2rem 0;
-  color: white;
+    text-align: center;
+    margin: 2rem 0;
+    color: white;
 }
 
 .site-footer a {
-  color: #ddd;
-  text-decoration: none;
-  border-bottom: 1px dotted #ddd;
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px dotted #ddd;
 }
 
 .site-footer a:hover {
-  color: #eee;
+    color: #eee;
 }
 
-.definition-box code, .how-to-remember-box code {
-  color: #333;
-  font-weight: bold;
+.definition-box code,
+.how-to-remember-box code {
+    color: #333;
+    font-weight: bold;
 }
