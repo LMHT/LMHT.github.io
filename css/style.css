@@ -214,18 +214,17 @@ strong {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom: 20px;
-    height: 2em;
   }
 .custom-combobox-toggle {
     position: fixed;
     top: 0;
     bottom: 0;
     margin-left: 1px;
+    margin-bottom: 0.4em;
     padding: 0;
-    height: 1.7em;
+    height: 2.1em;
     top: 0.1em;
   }
 .custom-combobox-input {
-    margin: 0;
-    padding: 0.3em;
+    padding: 0.4em;
   }
