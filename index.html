@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>LMHT</title>
@@ -12,11 +11,12 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src='js/jquery-1.11.3.min.js'></script>
+    <script src='js/jquery-ui-1.11.4.custom/external/jquery/jquery.js'></script>
+    <script src='js/jquery-ui-1.11.4.custom/jquery-ui.min.js'></script>
     <script src='js/combobox.js'></script>
     <script src='js/scripts.js'></script>
-
 </head>
-
 <body>
     <header class="site-header">
         <div class="site-header-inside inside">
@@ -31,70 +31,44 @@
             <p>Ayudando a los Hispanohablantes a Aprender Terminolog&iacute;a de Desarollo Web</p>
         </div>
     </header>
-    <div class="nav-placeholder" style="height: 42px;">
+<h4 class='searchlabel'>Select an element to view definition, memorization aids, audio pronunciation, and code sample:<br>Selecione un elemento para ver la definici&oacute;n, ayuda para recordar, la pronunciaci&oacute;n con audio, y ejemplos de como usar la etiqueta:</h4>
+
+<div class="sticky-combo">
         <nav class="">
             <div class="nav-inner">
                 <div class="nav-inner-most">
                     <ul class="clearfix">
                         <li>
-                            <form action="form1">
-                                <input type="text" name="FirstName" value="Place holder">
-                                <br>
-                            </form>
+                          <div class="ui-widget">
+                              <select id="tags">
+                                <option value='a.html'>&lt;a></option>
+                                <option value='base.html'>&lt;base></option>
+                                <option value='body.html'>&lt;body></option>
+                                <option value='br.html'>&lt;br></option>
+                                <option value='footer.html'>&lt;footer></option>
+                                <option value='head.html'>&lt;head&gt;</option>
+                                <option value='header.html'>&lt;header></option>
+                                <option value='html.html'>&lt;html></option>
+                                <option value='link.html'>&lt;link></option>
+                                <option value='meta.html'>&lt;meta&gt;</option>
+                                <option value='style.html'>&lt;style></option>
+                                <option value='title.html'>&lt;title></option>
+                              </select>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-
-    <div class="header-meta">
-      <p>Helping Spanish Speakers Understand Web Development Terminology</p>
-      <p>Ayudando a los Hispanohablantes a Aprender Terminolog&iacute;a de Desarollo Web</p>
-    </div>
-
-  </header>
-
-  <h4 class='searchlabel'>Select an element to view definition, memorization aids, audio pronunciation, and code sample:<br>Selecione un elemento para ver la definici&oacute;n, ayuda para recordar, la pronunciaci&oacute;n con audio, y ejemplos de como usar la etiqueta:</h4>
-
-  <div class="ui-widget">
-    <label></label>
-    <select id="tags">
-      <option value='a.html'>&lt;a></option>
-      <option value='base.html'>&lt;base></option>
-      <option value='body.html'>&lt;body></option>
-      <option value='br.html'>&lt;br></option>
-      <option value='footer.html'>&lt;footer></option>
-      <option value='head.html'>&lt;head&gt;</option>
-      <option value='header.html'>&lt;header></option>
-      <option value='html.html'>&lt;html></option>
-      <option value='link.html'>&lt;link></option>
-      <option value='meta.html'>&lt;meta&gt;</option>
-      <option value='style.html'>&lt;style></option>
-      <option value='title.html'>&lt;title></option>
-    </select>
+<main>
+  <div class="main-inside inside" id="main">
   </div>
-
-  <main>
-
-    <div class="main-inside inside" id="main">
-
-    </div>
-
-  </main>
-
+</main>
   <footer class="site-footer">
     Project by Team Open Brace, From <a href="http://ywebca.org/" target="_blank">YWebCA</a> Summer 2015.<br>
     Download the template HTML file for making your own card <a href="elements/template.html" download>here</a>.<br>
     Check out our <a href="https://github.com/kevinbrianfahy/LMHT" target="_blank">GitHub repository</a> to send a pull request for your card!
   </footer>
-
-  <script src='js/jquery-1.11.3.min.js'></script>
-  <script src='js/jquery-ui-1.11.4.custom/external/jquery/jquery.js'></script>
-  <script src='js/jquery-ui-1.11.4.custom/jquery-ui.min.js'></script>
-  <script src='js/scripts.js'></script>
-  <script src='js/combobox.js'></script>
-
 </body>
-
 </html>

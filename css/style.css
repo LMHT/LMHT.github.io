@@ -12,9 +12,6 @@ body {
     background: #48A2DF;
 }
 
-
-/*sitckybar-start*/
-
 nav {
     z-index: 500;
     background-color: rgba(0, 0, 0, 0.5);
@@ -23,45 +20,56 @@ nav {
 }
 
 .nav-placeholder {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 .fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .fixed .nav-inner {
-    padding: 0 0px;
+  padding: 0 0px;
 }
 
 .fixed .nav-inner-most {
-    width: 100%;
+  width: 100%;
 }
 
-nav ul {
+  nav ul {
     margin: 0;
     padding: 0;
-}
+  }
 
 nav ul li {
     list-style: none;
-    margin-left: 600px;
+  }
+
+.custom-combobox {
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+  }
+.custom-combobox-toggle {
+    margin-left: 1px;
+    margin-bottom: 0.4em;
+    padding: 0;
+    height: 1.7em;
+    top: 0.1em;
+  }
+.custom-combobox-input {
+    padding: 0.2em;
+  }
+
+#main {
+  margin-top: 50px;
 }
-
-
-/*stickybar-end*/
 
 .searchlabel {
     text-align: center;
     color: white;
-}
-
-.droplist {
-    margin: 0 auto 20px;
-    text-align: center;
 }
 
 select {
@@ -204,27 +212,3 @@ strong {
     color: #333;
     font-weight: bold;
 }
-
-.custom-combobox {
-    display: inline-block;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-  }
-.custom-combobox-toggle {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    margin-left: 1px;
-    margin-bottom: 0.4em;
-    padding: 0;
-    height: 2.1em;
-    top: 0.1em;
-  }
-.custom-combobox-input {
-    padding: 0.38em;
-  }
