@@ -14,6 +14,24 @@ body {
   background: #48A2DF;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button.play-button {
+  background: url('/button/play.png') no-repeat;
+  width: 5em;
+  height: 10em;
+}
+
+button.play-button.pause {
+  background: url('/button/pause.png') no-repeat;
+}
+
+
+
 .searchlabel {
   text-align: center;
   color: white;
