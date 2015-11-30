@@ -8,26 +8,14 @@ var app = {
   },
 
   setUpMenu: function() {
+    $("#tags").combobox();
 
-    // jQuery UI specific setup function
-    $('#tags').selectmenu({
+    $('#tags').change(function() {
+      var $selected = $(this);
+      var url = $selected.val();
 
-      select: function() {
-
-        var el = $(this);
-
-        // Using animate here instead of fadeOut so it doesn't collapse to zero height.
-        $("#main").animate({
-          opacity: 0
-        }, 500, function() {
-          var url = el.val();
-          app.getSection(url);
-        });
-
-      }
-
-    });
-
+      app.getSection(url);
+    })
   },
 
   getSection: function(url) {
@@ -71,9 +59,6 @@ var app = {
       // Select the option that matches the hash
       $("option[value='" + url + "']").prop("selected", true);
 
-      // Refresh jQuery UI menu
-      $('#tags').selectmenu("refresh");
-
       // Load that element
       this.getSection(url);
 
@@ -83,4 +68,6 @@ var app = {
 
 };
 
-app.init();
+$(function() {
+  app.init();
+});
