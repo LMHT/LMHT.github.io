@@ -20,7 +20,7 @@ There are several ways to contribute to LMHT depending on your level of github e
 
 ## Submit an Issue
 
-Before submitting an issue, please visit the LMHT repository's [Issues page] to verify it is not already a known issue. If is is a new issue, click "New Issue" in the upper right corner and title it according to what the issue is. Issues are tracked by title so make it as accurate as possible. Then leave a detailed comment about what the issue is, where it occurs, what button or feature you were trying to use, what did not work correctly, how should it have worked, etc. If possible, submit screen shots or any applicable files to document the issue.  Please do not assign any milestones or labels&mdash;we will do that.
+Before submitting an issue, please visit the LMHT repository's [Issues page] to verify it is not already a known issue. If it is a new issue, click "New Issue" in the upper right corner and title it according to what the issue is. Issues are tracked by title, so please make it as accurate as possible. Then leave a detailed comment about what the issue is, where it occurs, what button or feature you were trying to use, what did not work correctly, how should it have worked, etc. If possible, submit screen shots or any applicable files to document the issue.  Please do not assign any milestones or labels&mdash;we will do that.
 
 Once an issue is submitted, we will review it and request any additional information needed to verify the issue. If it is a valid issue, we will keep it on the issues list to be addressed in the future.
 
@@ -28,7 +28,7 @@ Once an issue is submitted, we will review it and request any additional informa
 
 Currently, we are using the [Issues page] to also make feature requests. Before making a feature request, please review the website and make sure that this feature is in line with the site's direction and it is not a repeat request. It is up to you to submit a strong case for approving this feature.
 
-To submit your feature request, follow the directions [in the above seciton](#submit-an-issue) for sumitting an issue. Be as detailed as possible about what you want this feature to do. We will review your case and decide accordingly. Not all requests will be approved.
+To submit your feature request, follow the directions [in the above section](#submit-an-issue) for submitting an issue. Be as detailed as possible about what you want this feature to do. We will review your case and decide accordingly. Not all requests will be approved.
 
 ## Edit Documentation
 
@@ -49,7 +49,7 @@ As a contributor the expectation is that you can use Git and GitHub comfortably 
 
 (These directions are straight from [Contributing to Open Source])
 
-1.  Fork the repository and clone it locally. Attach your local to the original "upstream" respository by additing it as a remote. Pull the changes from upstream daily so that you are modifying current data when you submit a pull request. More in-depth instructions [here].
+1.  Fork the repository and clone it locally. Attach your local to the original "upstream" respository by adding it as a remote. Pull the changes from upstream daily so that you are modifying current data when you submit a pull request. More in-depth instructions [here].
 
 2.  Create a branch for your edits. Depending on what you have loaded in your editor, `git checkout -b name-your-branch-here`, should suffice.
 
