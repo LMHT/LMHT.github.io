@@ -14,7 +14,7 @@ body {
 
 nav {
   z-index: 500;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #48A2DF;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -27,7 +27,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #FFFFFF;
 }
 
 .fixed .nav-inner {
@@ -41,27 +41,28 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  }
+}
 
 nav ul li {
   list-style: none;
-  }
+}
 
 .custom-combobox {
   display: block;
   text-align: center;
-  padding-top: 3px;
-  }
+}
+
 .custom-combobox-toggle {
   margin-left: 1px;
   margin-bottom: 0.4em;
-  padding: 0;
-  height: 1.7em;
+  height: 66px;
   top: 0.1em;
-  }
+}
+
 .custom-combobox-input {
-  padding: 0.2em;
-  }
+  padding: 1em 1em;
+  width: 35em;
+}
 
 #main {
   margin-top: 50px;
