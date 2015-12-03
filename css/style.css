@@ -47,6 +47,23 @@ nav ul li {
   list-style: none;
 }
 
+.custom-combobox::before {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  content: "";
+  background: url("/img/search-icon.svg") no-repeat 0 0;
+  background-size: 100%;
+  position: absolute;
+  left: 25px;
+}
+
+/*.search-icon {
+  height: 50%;
+  width: 50%;
+}*/
+
 .custom-combobox {
   display: block;
   text-align: center;
