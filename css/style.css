@@ -48,15 +48,15 @@ nav ul li {
 }
 
 .custom-combobox::before {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  content: "";
   background: url("/img/search-icon.svg") no-repeat 0 0;
   background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  margin-top: 16px;
+  margin-left: 18px;
   position: absolute;
-  left: 25px;
+  width: 40px;
 }
 
 /*.search-icon {
@@ -77,7 +77,7 @@ nav ul li {
 }
 
 .custom-combobox-input {
-  padding: 1em 1em;
+  padding: 1em 4em 1em;
   width: 35em;
 }
 
