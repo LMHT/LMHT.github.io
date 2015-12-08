@@ -5,7 +5,7 @@ var app = {
   init: function() {
     this.setUpMenu();
     this.setUpFirstView();
-    $('input').val(''); //TODO: this code needs to be placed inside combobox.js somehow
+    $('input').val(''); //todo: this code needs to be placed inside combobox.js somehow
   },
 
   setUpMenu: function() {

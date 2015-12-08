@@ -37,8 +37,10 @@ $(document).ready(function() {
 
     if (scrollPos >= navOffset) {
       $("nav").addClass("fixed");
+      $(".ui-menu").addClass("menu").css({"top": "73px"});
     } else {
       $("nav").removeClass("fixed");
+      $(".ui-menu").removeClass("menu").css({"top": "355px"});
     }
 
   });

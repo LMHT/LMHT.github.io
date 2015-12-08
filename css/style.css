@@ -23,6 +23,14 @@ nav {
   margin: 0 0 10px 0;
 }
 
+.menu {
+  position: fixed;
+}
+
+.ui-menu {
+  z-index: 500;
+}
+
 .fixed {
   position: fixed;
   top: 0;
