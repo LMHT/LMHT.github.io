@@ -59,26 +59,29 @@ nav ul li {
   width: 40px;
 }
 
-/*.search-icon {
-  height: 50%;
-  width: 50%;
-}*/
-
 .custom-combobox {
-  display: block;
-  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.custom-combobox-toggle,
+.custom-combobox-input {
+  box-shadow: inset 0 0 0 1px rgb(211, 211, 211);
+  border: 0;
 }
 
 .custom-combobox-toggle {
-  margin-left: 1px;
-  margin-bottom: 0.4em;
-  height: 66px;
-  top: 0.1em;
+  margin: 0;
+  top: inherit;
+  width: 50px;
 }
 
 .custom-combobox-input {
   padding: 1em 4em 1em;
-  width: 35em;
+  flex-grow: 10;
 }
 
 #main {
