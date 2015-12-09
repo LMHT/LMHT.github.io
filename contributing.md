@@ -11,7 +11,7 @@ Thank you for your interest in contributing to LMHT! Enclosed are guidelines for
 
 ## Ways to Contribute
 
-There are several ways to contribute to LMHT depending on your level of github experience and what you want to accomplish:
+There are several ways to contribute to LMHT depending on your level of GitHub experience and what you want to accomplish:
 
 * [Submit an Issue](#submit-an-issue)
 * [Request a Feature](#request-a-feature)
@@ -20,7 +20,7 @@ There are several ways to contribute to LMHT depending on your level of github e
 
 ## Submit an Issue
 
-Before submitting an issue, please visit the LMHT repository's [Issues page] to verify it is not already a known issue. If it is a new issue, click "New Issue" in the upper right corner and title it according to what the issue is. Issues are tracked by title, so please make it as accurate as possible. Then leave a detailed comment about what the issue is, where it occurs, what button or feature you were trying to use, what did not work correctly, how should it have worked, etc. If possible, submit screen shots or any applicable files to document the issue.  Please do not assign any milestones or labels&mdash;we will do that.
+Before submitting an issue, please visit the LMHT repository's [Issues page] to verify it is not already a known issue. If it is a new issue, click "New Issue" in the upper right corner and title it according to what the issue is. Issues are tracked by title, so make it as accurate as possible. Then leave a detailed comment about what the issue is, where it occurs, what button or feature you were trying to use, what did not work correctly, how should it have worked, etc. If possible, submit screen shots or any applicable files to document the issue.  Please do not assign any milestones or labels&mdash;we will do that.
 
 Once an issue is submitted, we will review it and request any additional information needed to verify the issue. If it is a valid issue, we will keep it on the issues list to be addressed in the future.
 
@@ -39,13 +39,7 @@ There are two ways you can submit a change to documentation. The [Issues page] c
 
 ## Become a GitHub Contributor
 
-If you wish to become a contributor to LMHT, please send an email to lmht@adorable.io that will include the following information so we can grant you access.
-
-* Basic contact information, including your GitHub user name, if applicable
-* Which areas of expertise you wish to contribute (e.g. English to Spanish translation, implementation, documentation)
-* Your level of comfort using GitHub
-
-As a contributor the expectation is that you can use Git and GitHub comfortably enough to fork branches, make pull requests, and practice good commit hygiene.
+As a contributor, the expectation is that you can use Git and GitHub comfortably enough to fork branches, make pull requests, and practice good commit hygiene.
 
 (These directions are straight from [Contributing to Open Source])
 
