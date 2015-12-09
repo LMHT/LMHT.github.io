@@ -36,11 +36,11 @@ $(document).ready(function() {
     scrollPos = $(window).scrollTop();
 
     if (scrollPos >= navOffset) {
-      $("nav").addClass("fixed");
-      $(".ui-menu").addClass("menu").css({"top": "73px"});
+      $("nav").addClass("fixed sticky-nav-color");
+      $(".ui-menu").addClass("fixed-dropdown").css({"top": "73px"});
     } else {
-      $("nav").removeClass("fixed");
-      $(".ui-menu").removeClass("menu").css({"top": "355px"});
+      $("nav").removeClass("fixed sticky-nav-color");
+      $(".ui-menu").removeClass("fixed-dropdown").css({"top": "355px"});
     }
 
   });

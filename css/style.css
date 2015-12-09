@@ -19,11 +19,15 @@ nav {
   padding-bottom: 10px;
 }
 
+nav.sticky-nav-color {
+  background-color: #216794;
+}
+
 .nav-placeholder {
   margin: 0 0 10px 0;
 }
 
-.menu {
+.fixed-dropdown {
   position: fixed;
 }
 
@@ -35,7 +39,6 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #216794;
 }
 
 .fixed .nav-inner {
