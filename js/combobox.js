@@ -8,6 +8,11 @@ $(function() {
          this.element.hide();
          this._createAutocomplete();
          this._createShowAllButton();
+// placeholder
+         this.input.attr("placeholder", this.element.attr('placeholder'));
+         // clear the default selected option so that we see the placeholder text
+        //  this.input.value = '';
+        //  console.log(this.input)
        },
 
        _createAutocomplete: function() {
