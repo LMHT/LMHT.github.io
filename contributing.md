@@ -43,11 +43,11 @@ As a contributor, the expectation is that you can use Git and GitHub comfortably
 
 (These directions are straight from [Contributing to Open Source])
 
-1.  Fork the repository and clone it locally. Attach your local to the original "upstream" respository by adding it as a remote. Pull the changes from upstream daily so that you are modifying current data when you submit a pull request. More in-depth instructions [here].
+1.  Fork the repository and clone it locally. Attach your local to the original "upstream" repository by adding it as a remote. Pull the changes from upstream daily so that you are modifying current data when you submit a pull request. More in-depth instructions [here].
 
 2.  Create a branch for your edits. Depending on what you have loaded in your editor, `git checkout -b name-your-branch-here`, should suffice.
 
-3.  It is common practice to name your branch according to what it is fixing or updating. Before submitting these changes, verify they work. You can include screenshots of the before and after if the changes are HTML/CSS based and drop those images into your pull request for further verification. Please try to maintain the look of the site as we currently have it.
+3.  It is common practice to name your branch according to what it is fixing or updating. Before submitting these changes, verify they work. You can include screenshots of the before and after, if the changes are HTML/CSS based, and drop those images into your pull request for further verification. Please try to maintain the look of the site as we currently have it.
 
 4.  Once you have submitted a pull request, we will review it. Post any changes or suggestions for review or opinion and handle accordingly. Not every pull request will be added to our database. Follow the request to keep up to date on its status.
 
