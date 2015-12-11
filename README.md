@@ -1,79 +1,45 @@
-# LMHT
+# LMHT - HTML: Lenguaje de Marca de Hipertexto - Hyper Text Markup Language
 
-A project by Team Open Brace in YWebCA.
+Welcome to [LMHT].  This is an open source code repository to help Spanish speakers translate and understand HTML tags.  LMHT was originally started as a [YWebCA] project by Team Open Brace in the Summer of 2015. [Adorable] and other contributors are working towards expanding this project into a valuable learning tool for bilingual programmers.  
 
-## Setup
+[LMHT]: http://lmht.github.io/
+[YWebCA]: http://ywebca.org/
+[Adorable]:  http://adorable.io/
 
-Welcome to LMHT! We are excited for people to contribute in helping Spanish speakers understand the meaning behind HTML tags. With your help, the possibilities are endless, and we can also add other languages. If there is an HTML tag not in our dropdown list, and you feel you can explain what the english tag represents to Spanish speakers, we've made it easy for you to contribute!
+## Introduction
 
-1) Copy and paste the template below, adding the relevant information, into a new html file. Save the file using the name of the tag you are adding, and add the file to our 'elements' folder.
+The [LMHT page] provides a list of current HTML tags.  Begin by typing a tag in the search box, or click the button to see all available tags.  Once you have selected a tag, you will see the English base of the tag, the Spanish equivalent, a definition in both English and Spanish and audio recordings of each definition and tag.  Furthermore, there are helpful hints on how to remember what the tag does, as well as examples of the tag being used in code.
 
-2) Add one line to the END of our options list in our index.html. This list begins on line 37 of index.html and looks like below. The .html file you saved and put into our elements folder is the value, and the tag itself goes in between the open and closed `option`.
-
-`<option value='YOURFILE.html'>&lt;YOURTAG></option>`
-
-One last thing. Although you don't style anything when adding an html doc to our project, we recognize that many people prefer to view the rendering of their html doc before pushing their work upstream. Because this project uses `$.ajax`, you must have a local web server in order for this to work properly on a local machine. If you have OS X:
-
-1. `cd` to the project folder
-1. Type `python -m SimpleHTTPServer`
-1. Go to [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
+[LMHT page]:  http://lmht.github.io/
 
 
-HTML Template down here:
+## Known Issues
 
-```
-<article class="article">
-    <header class="article-header">
-      <h2>
-        <code>
-          <!-- Actual Tag Name; Whatever the tag name is.  -->
-          &lt;tagname>
-        </code>
-        <!-- Audio; You don't need to make your own audio file, but we're cool if you have one.
-          Simply name as the same tag name that you're doing and save it as an mp3
-          (e.g. anchor.mp3 for anchor). -->
-        <audio src="audio/tagname.mp3" controls></audio>
-      </h2>
-      <div class="base-words">
-        <div class="base-word-line">
-          <!-- <strong> includes the base word in English -->
-          English Base Word: <strong></strong>
-        </div>
-        <div class="base-word-line">
-          <!-- <strong> includes the base word in Spanish -->
-          Spanish Word Equivalent: <strong></strong>
-        </div>
-      </div>
-    </header>
-    <div class="definition">
-      <div class="definition-box definition-spanish">
-        <h4>Definici&oacute;n</h4>
-        <p></p>
-      </div>
-      <div class="definition-box definition-english">
-        <h4>Definition</h4>
-        <p></p>
-      </div>
-    </div>
-    <div class="how-to-remember">
-      <div class="how-to-remember-box how-to-remember-spanish">
-        <!-- Spanish block heading; no editing needed-->
-        <h4>&iquest;C&oacute;mo recordar?</h4>
-        <!-- Mnemonic Aid in Spanish -->
-        <p></p>
-      </div>
-      <div class="how-to-remember-box how-to-remember-english">
-        <!-- English block heading; no editing needed-->
-        <h4>How to Remember</h4>
-        <!-- Mnemonic Aid in English -->
-        <p></p>
-      </div>
-    </div>
-    <!-- <code> contains the code example. Use <strong> to select the keyword/specific tag -->
-    <pre class="code-example">
-      <code>
-        <!-- Place your awesome code example here :D -->
-      </code>
-    </pre>
-  </article>
-```
+* Attributes: Currently, in the beginning stages, the focus is to define the primary HTML tags.  Eventually, this site will also define the attributes associated with each of these tags.
+* Formatting: As the page develops there will be periodic formatting issues that come up. You may create an issue on Github or contact us via email to notify us.
+* Missing or incorrect information:  As an open source project, it will take time to acquire a significant database, as well as having completed definitions.  Some translations or audio recordings may be missing, so we would love your help in further developing this project.
+
+
+## Contributing
+
+To contribute to LMHT, please see [CONTRIBUTING](CONTRIBUTING.md).
+
+The LMHT project especially needs bilingual assistance to help with translations.  However, any help is appreciated and will make a difference.  If you have not already worked on an open source project on [GitHub], it is highly recommended to read the following tutorials.
+
+GitHub's [Hello World]
+GitHub's [Open Source Guide]
+GitHub's [Video Training]
+
+[CONTRIBUTING]: https://github.com/LMHT/LMHT.github.io/blob/master/contributing.md  
+[GitHub]:  https://github.com
+[Hello World]:  https://guides.github.com/activities/hello-world/
+[Open Source Guide]:  https://guides.github.com/activities/contributing-to-open-source/
+[Video Training]: https://www.youtube.com/user/GitHubGuides
+
+
+## Contact Us
+
+We are open to any kind of feedback.  Create a new issue regarding your input on our [Issues Page].  You can also contact us with any questions or comments via [email].
+
+[Issues page]: https://github.com/LMHT/LMHT.github.io/issues
+[email]: mailto:lmht@adorable.io

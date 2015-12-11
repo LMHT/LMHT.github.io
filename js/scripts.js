@@ -5,6 +5,7 @@ var app = {
   init: function() {
     this.setUpMenu();
     this.setUpFirstView();
+    $('input').val(''); 
   },
 
   setUpMenu: function() {

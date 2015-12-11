@@ -8,6 +8,7 @@ $(function() {
          this.element.hide();
          this._createAutocomplete();
          this._createShowAllButton();
+         this.input.attr("placeholder", this.element.attr('placeholder'));
        },
 
        _createAutocomplete: function() {
