@@ -1,6 +1,6 @@
 # LMHT - HTML: Lenguaje de Marca de Hipertexto - Hyper Text Markup Language
 
-Welcome to [LMHT].  This is an open source code repository to help Spanish speakers translate and understand HTML tags.  LMHT was originally started as a [YWebCA] project by Team Open Brace in the Summer of 2015. [Adorable] and other contributors are working towards expanding this project into an valuable learning tool for bilingual programmers.  
+Welcome to [LMHT].  This is an open source code repository to help Spanish speakers translate and understand HTML tags.  LMHT was originally started as a [YWebCA] project by Team Open Brace in the Summer of 2015. [Adorable] and other contributors are working towards expanding this project into a valuable learning tool for bilingual programmers.  
 
 [LMHT]: http://lmht.github.io/
 [YWebCA]: http://ywebca.org/
