@@ -7,6 +7,7 @@ Thank you for your interest in contributing to LMHT! Enclosed are guidelines for
 * [Request a Feature](#request-a-feature)
 * [Edit Documentation](#edit-documentation)
 * [Become a GitHub Contributor](#become-a-github-contributor)
+* [Verifying Your Changes](#verifying-your-changes)
 * [Approval Process](#approval-process)
 
 ## Ways to Contribute
@@ -47,9 +48,16 @@ As a contributor, the expectation is that you can use Git and GitHub comfortably
 
 2.  Create a branch for your edits. Depending on what you have loaded in your editor, `git checkout -b name-your-branch-here`, should suffice.
 
-3.  It is common practice to name your branch according to what it is fixing or updating. Before submitting these changes, verify they work. You can include screenshots of the before and after, if the changes are HTML/CSS based, and drop those images into your pull request for further verification. Please try to maintain the look of the site as we currently have it.  One way to verify your changes is to see them "in action" by running a local server and viewing your branch's web site as it would look once it is merged.  
+3.  It is common practice to name your branch according to what it is fixing or updating. Before submitting these changes, verify they work. You can include screenshots of the before and after, if the changes are HTML/CSS based, and drop those images into your pull request for further verification. Please try to maintain the look of the site as we currently have it.
 
-      To run a local server, open iterm or whichever emulator you are using and go to your GitHub project's folder.  From that command prompt, type:  python -m SimpleHTTPServer.  You will need to keep this open until you are shutting the server down.  Go to your browser and type:  http://0.0.0.0:8000/  This will open up your local version of the site so you can verify your changes.
+#### Verifying Your Changes
+
+  Verify your changes are correct before submitting a pull request by rendering your html doc.  Because the project uses Ajax, you must have a local web server for this to work properly.  If you have OS X:
+
+    $  cd myrepo
+    $  python -m SimpleHTTPServer
+    *  Running on [http://0.0.0.0:8000](http://0.0.0.0:8000/)
+
 
 4.  Once you have submitted a pull request, we will review it. Post any changes or suggestions for review or opinion and handle accordingly. Not every pull request will be added to our database. Follow the request to keep up to date on its status.
 
