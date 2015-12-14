@@ -22,7 +22,7 @@ The [LMHT page] provides a list of current HTML tags.  Begin by typing a tag in 
 
 ## Contributing
 
-To contribute to LMHT, please see [CONTRIBUTING](CONTRIBUTING.md).
+To contribute to LMHT, please see [CONTRIBUTING].
 
 The LMHT project especially needs bilingual assistance to help with translations.  However, any help is appreciated and will make a difference.  If you have not already worked on an open source project on [GitHub], it is highly recommended to read the following tutorials.
 
@@ -30,7 +30,7 @@ GitHub's [Hello World]
 GitHub's [Open Source Guide]
 GitHub's [Video Training]
 
-[CONTRIBUTING]: https://github.com/LMHT/LMHT.github.io/blob/master/contributing.md  
+[CONTRIBUTING]: https://github.com/LMHT/LMHT.github.io/blob/master/CONTRIBUTING.md  
 [GitHub]:  https://github.com
 [Hello World]:  https://guides.github.com/activities/hello-world/
 [Open Source Guide]:  https://guides.github.com/activities/contributing-to-open-source/
