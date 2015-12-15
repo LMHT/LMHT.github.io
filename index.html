@@ -6,56 +6,7 @@
     <title>LMHT</title>
     <link type='text/css' href='css/style.css' rel='stylesheet' />
     <link rel='stylesheet' href='js/jquery-ui-1.11.4.custom/jquery-ui.min.css' />
-    <script type="text/javascript">
-      var audio, playbtn, seek_bar, audio2, playbtn2, seek_bar;
 
-      function initAudioPlayer() {
-        audio = new Audio();
-        audio.src = "audio/anchor 1.52.32 PM.mp3";
-
-        // Set object references
-        playbtn = document.getElementById("playpausebtn");
-        // Add Event Handling
-        playbtn.addEventListener("click", playPause);
-        // Functions
-        function playPause() {
-          if (audio.paused) {
-            audio.play();
-            playbtn.className = 'play-button pause';
-          } else {
-            audio.pause();
-            playbtn.className = 'play-button';
-          }
-        }
-
-      }
-
-      function initAudioPlayer2() {
-        audio2 = new Audio();
-        audio2.src = "audio/anchor_def_spanish.mp3";
-
-        // Set object references
-        playbtn2 = document.getElementById("playpausebtn2");
-        // Add Event Handling
-        playbtn2.addEventListener("click", playPause2);
-        // Functions
-        function playPause2() {
-          if (audio2.paused) {
-            audio2.play();
-            playbtn2.className = 'play-button pause';
-          } else {
-            audio2.pause();
-            playbtn2.className = 'play-button';
-          }
-        }
-
-      }
-
-      window.addEventListener("load", function() {
-        initAudioPlayer();
-        initAudioPlayer2();
-      });
-    </script>
 </head>
 
 <body>
@@ -72,8 +23,7 @@
             <p>Ayudando a los Hispanohablantes a Aprender Terminolog&iacute;a de Desarollo Web</p>
         </div>
     </header>
-    <button id="playpausebtn" class="play-button"></button>
-    <button id="playpausebtn2" class="play-button"></button>
+
     <h4 class='searchlabel'>Select an element to view definition, memorization aids, audio pronunciation, and code sample:<br>Selecione un elemento para ver la definici&oacute;n, ayuda para recordar, la pronunciaci&oacute;n con audio, y ejemplos de como usar la etiqueta:</h4>
     <div class='droplist'>
         <label for='tags'></label>
@@ -106,6 +56,8 @@
     <script src='js/jquery-ui-1.11.4.custom/external/jquery/jquery.js'></script>
     <script src='js/jquery-ui-1.11.4.custom/jquery-ui.min.js'></script>
     <script src='js/scripts.js'></script>
+    <script type="text/javascript" src="js/button.js"></script>
+
 </body>
 
 </html>

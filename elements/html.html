@@ -1,40 +1,66 @@
 <article class="article">
-  <header class="article-header">
-    <h2>
+    <header class="article-header">
+        <style type="text/css">
+        button {
+            border: none;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+        }
+
+        button.play-button {
+            background: url('/button/play.png') no-repeat;
+            width: 2em;
+            height: 1.8em;
+            background-size: 20px 20px;
+            margin-left: 3px;
+        }
+
+        button.play-button.pause {
+            background: url('/button/pause.png') no-repeat;
+            background-size: 20px 20px;
+        }
+        </style>
+        <h2>
       <code>
         &lt;html&gt;
       </code>
     </h2>
-    <div class="base-words">
-      <div class="base-word-line">
-        English Base Word: <strong>Hyper Text Markup Language</strong>
-      </div>
-      <div class="base-word-line">
-        Spanish Word Equivalent: <strong>Lenguaje de Marcas de Hiptertexto</strong>
-      </div>
+        <div class="base-words">
+            <div class="base-word-line">
+                English Base Word: <strong>Hyper Text Markup Language</strong>
+                                <button data-audio-src="audio/html_english.mp3" class="play-button"></button>
+
+            </div>
+            <div class="base-word-line">
+                Spanish Word Equivalent: <strong>Lenguaje de Marcas de Hiptertexto</strong>
+                                <button data-audio-src="audio/lmht_spanish.mp3" class="play-button"></button>
+
+            </div>
+        </div>
+    </header>
+    <div class="definition">
+        <div class="definition-box definition-spanish">
+            <h4>Definici&oacute;n<button data-audio-src="audio/lmht_def_spanish.mp3" class="play-button"></button></h4>
+            <p>El elemento <code>&lt;html&gt;</code> es el elemento raíz de un documento HTML. Generalmente, es la primera línea del documento después de <code>&lt;!DOCTYPE&gt;</code> como su primer elemento, sin embargo, puede estar precedido por comentarios.</p>
+        </div>
+        <div class="definition-box definition-english">
+            <h4>Definition<button data-audio-src="audio/html_def_english.mp3" class="play-button"></button></h4>
+            <p> The <code>&lt;html&gt;</code> element is the root element of an HTML document. Usually it is the very first line of the document, after <code>&lt;!DOCTYPE&gt;</code> as it’s the first element, however it can be preceded by comments.</p>
+        </div>
     </div>
-  </header>
-  <div class="definition">
-    <div class="definition-box definition-spanish">
-      <h4>Definici&oacute;n</h4>
-      <p>El elemento <code>&lt;html&gt;</code> es el elemento raíz de un documento HTML.  Generalmente, es la primera línea del documento después de <code>&lt;!DOCTYPE&gt;</code> como su primer elemento, sin embargo, puede estar precedido por comentarios.</p>
+    <div class="how-to-remember">
+        <div class="how-to-remember-box how-to-remember-spanish">
+            <h4>&iquest;C&oacute;mo recordar?</h4>
+            <p>Recuerde siempre poner esto primero para identificar lo que está haciendo. Está haciendo un documento HTML así que ponga <code>&lt;html&gt;</code> primero.</p>
+        </div>
+        <div class="how-to-remember-box how-to-remember-english">
+            <h4>How to Remember</h4>
+            <!-- Mnemonic Aid in English -->
+            <p>Always remember to put this first by identifying what you are making. You’re making an HTML document so put <code>&lt;html&gt;</code> first.</p>
+        </div>
     </div>
-    <div class="definition-box definition-english">
-      <h4>Definition</h4>
-      <p> The <code>&lt;html&gt;</code> element is the root element of an HTML document.  Usually it is the very first line of the document, after <code>&lt;!DOCTYPE&gt;</code> as it’s the first element, however it can be preceded by comments.</p>
-    </div>
-  </div>
-  <div class="how-to-remember">
-    <div class="how-to-remember-box how-to-remember-spanish">
-      <h4>&iquest;C&oacute;mo recordar?</h4>
-      <p>Recuerde siempre poner esto primero para identificar lo que está haciendo. Está haciendo un documento HTML así que ponga <code>&lt;html&gt;</code> primero.</p>
-    </div>
-    <div class="how-to-remember-box how-to-remember-english">
-      <h4>How to Remember</h4>      <!-- Mnemonic Aid in English -->
-      <p>Always remember to put this first by identifying what you are making.  You’re making an HTML document so put <code>&lt;html&gt;</code> first.</p>
-    </div>
-  </div>
-  <pre class="code-example">
+    <pre class="code-example">
     <code>
       <strong>&lt;html&gt;</strong>
         &lt;head&gt;
@@ -44,4 +70,3 @@
     </code>
   </pre>
 </article>
-

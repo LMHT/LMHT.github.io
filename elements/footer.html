@@ -1,41 +1,63 @@
 <article class="article">
-  <header class="article-header">
-    <h2>
+    <header class="article-header">
+        <style type="text/css">
+        button {
+            border: none;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+        }
+
+        button.play-button {
+            background: url('/button/play.png') no-repeat;
+            width: 2em;
+            height: 1.8em;
+            background-size: 20px 20px;
+            margin-left: 3px;
+        }
+
+        button.play-button.pause {
+            background: url('/button/pause.png') no-repeat;
+            background-size: 20px 20px;
+        }
+        </style>
+        <h2>
       <code>
         &lt;footer&gt;
       </code>
-      <audio src="audio/footer.mp3" controls></audio>
     </h2>
-    <div class="base-words">
-      <div class="base-word-line">
-        English base word: <strong>Footer</strong>
-      </div>
-      <div class="base-word-line">
-        Spanish word equivalent: <strong>Pie de P&aacute;inga</strong>
-      </div>
+        <div class="base-words">
+            <div class="base-word-line">
+                English base word: <strong>Footer</strong>
+                <button data-audio-src="audio/footer_english.mp3" class="play-button"></button>
+            </div>
+            <div class="base-word-line">
+                Spanish word equivalent: <strong>Pie de P&aacute;inga</strong>
+                <button data-audio-src="audio/footer_spanish.mp3" class="play-button"></button>
+            </div>
+        </div>
+    </header>
+    <div class="definition">
+        <div class="definition-box definition-spanish">
+            <h4>Definici&oacute;n<button data-audio-src="audio/footer_def_engliish.mp3" class="play-button"></button></h4>
+            <p>La etiqueta <code>&lt;footer&gt;</code> es un elemento de bloque que crea el pie de página de su sección, artículo, o página. Incluso contiene información del contenido como información de contacto, general derechos de autoría buscar información, El footer es una forma elegante y sistemática usada en lugar de <code>&lt;div&gt;</code> para ayudar a encontrar mecanismos, encontrar información relevante a la página.</p>
+        </div>
+        <div class="definition-box definition-english">
+            <h4>Definition<button data-audio-src="audio/footer_def_spanish.mp3" class="play-button"></button></h4>
+            <p>The <code>&lt;footer&gt;</code> tag is a block element that creates the footer at the bottom of a section, article, or page. It also contains informational content, like contact info, copyright info, or general site info. The footer is a semantic element used in place of a <code>&lt;div&gt;</code> to help search engines find relevant information about your page. </p>
+        </div>
     </div>
-  </header>
-  <div class="definition">
-    <div class="definition-box definition-spanish">
-      <h4>Definici&oacute;n</h4>
-      <p>La etiqueta <code>&lt;footer&gt;</code> es un elemento de bloque que crea el pie de página de su sección, artículo, o página. Incluso contiene información del contenido como información de contacto, general derechos de autoría buscar información, El footer es una forma elegante y sistemática usada en lugar de <code>&lt;div&gt;</code> para ayudar a encontrar mecanismos, encontrar información relevante a la página.</p>
-    </div>
-    <div class="definition-box definition-english">
-      <h4>Definition</h4>
-      <p>The <code>&lt;footer&gt;</code> tag is a block element that creates the footer at the bottom of a section, article, or page. It also contains informational content, like contact info, copyright info, or general site info. The footer is a semantic element used in place of a <code>&lt;div&gt;</code> to help search engines find relevant information about your page. </p>
-    </div>
-  </div>
     <div class="how-to-remember">
-      <div class="how-to-remember-box how-to-remember-spanish">
-        <h4>&iquest;C&oacute;mo recordar?</h4>
-        <p>El <code>&lt;footer&gt;</code> es un elemento de bloque que crea el pie de página en la parte inferior de una sección, artículo o página. También contiene contenido de la información, como información de contacto, información de derechos de autor o información general del sitio. El pie es un elemento semántico utilizado en lugar de un <code>&lt;div&gt;</code> para ayudar a los motores de búsqueda encontrar información relevante acerca de tu página.</p>
-      </div>
-    <div class="how-to-remember-box how-to-remember-english">
-      <h4>How to Remember</h4>
-      <p>Las secciones de una página HTML son lo mismo que las secciones de un documento escrito. La parte inferior de un documento es conocido como el “footer”, al igual que la parte inferior de una página HTML es conocido como el <code>&lt;footer&gt;</code>.</p>
+        <div class="how-to-remember-box how-to-remember-spanish">
+            <h4>&iquest;C&oacute;mo recordar?</h4>
+            <p>El <code>&lt;footer&gt;</code> es un elemento de bloque que crea el pie de página en la parte inferior de una sección, artículo o página. También contiene contenido de la información, como información de contacto, información de derechos de autor o información general del sitio. El pie es un elemento semántico utilizado en lugar de un <code>&lt;div&gt;</code> para ayudar a los motores de búsqueda encontrar información relevante acerca de tu página.</p>
+        </div>
+        <div class="how-to-remember-box how-to-remember-english">
+            <h4>How to Remember</h4>
+            <p>Las secciones de una página HTML son lo mismo que las secciones de un documento escrito. La parte inferior de un documento es conocido como el “footer”, al igual que la parte inferior de una página HTML es conocido como el <code>&lt;footer&gt;</code>.</p>
+        </div>
     </div>
-  </div>
-  <pre class="code-example">
+    <pre class="code-example">
     <code>
       <strong>&lt;footer&gt;</strong>
         &lt;p&gt;Copyright © 2010 by Bill Shakespeare&lt;br&gt;
