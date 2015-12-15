@@ -30,7 +30,6 @@ GitHub's [Hello World]
 GitHub's [Open Source Guide]
 GitHub's [Video Training]
 
-[CONTRIBUTING]: https://github.com/LMHT/LMHT.github.io/blob/master/contributing.md  
 [GitHub]:  https://github.com
 [Hello World]:  https://guides.github.com/activities/hello-world/
 [Open Source Guide]:  https://guides.github.com/activities/contributing-to-open-source/
