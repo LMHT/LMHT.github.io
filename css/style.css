@@ -183,7 +183,8 @@ strong {
 }
 
 .how-to-remember,
-.definition {
+.definition,
+.how-to-contribute {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -196,14 +197,16 @@ strong {
 }
 
 .how-to-remember-box,
-.definition-box {
+.definition-box,
+.how-to-contribute-box {
   border: 1px solid #ccc;
   padding: 1rem;
   width: calc(50% - 0.5rem);
 }
 
 .how-to-remember-box h4,
-.definition-box h4 {
+.definition-box h4,
+.how-to-contribute-box h4 {
   background: #4872fb;
   color: white;
   padding: 0.5rem 1rem;
