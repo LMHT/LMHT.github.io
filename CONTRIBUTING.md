@@ -29,7 +29,7 @@ As a contributor, the expectation is that you can use Git and GitHub comfortably
 ```
 $  cd myrepo
 $  python -m SimpleHTTPServer
-*  Running on [http://0.0.0.0:8000](http://0.0.0.0:8000/)
+*  Running on [http://0.0.0.0:8000]
 ```
 
 ## Approval Process
@@ -42,3 +42,4 @@ Always feel free to [email] us with any questions, too.
 [email]: mailto:lmht@adorable.io
 [Contributing to Open Source]:  https://guides.github.com/activities/contributing-to-open-source/#contributing
 [here]:  https://help.github.com/articles/syncing-a-fork/
+[http://0.0.0.0:8000]:  (http://0.0.0.0:8000/)
