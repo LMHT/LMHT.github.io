@@ -104,27 +104,14 @@ nav ul li {
     color: white;
 }
 
-<<<<<<< HEAD
-.droplist {
-    margin: 0 auto 20px;
-    text-align: center;
-}
-
-=======
->>>>>>> master
 select {
     width: 300px;
 }
 
 h1,
 h2 {
-<<<<<<< HEAD
-    font-size: 3rem;
-    font-weight: 700;
-=======
   font-size: 3rem;
   font-weight: 700;
->>>>>>> master
 }
 
 h2 {
@@ -197,17 +184,8 @@ strong {
 
 .how-to-remember,
 .definition {
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 1rem;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-=======
+.how-to-remember,
+.definition {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -217,37 +195,22 @@ strong {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
->>>>>>> master
 }
 
 .how-to-remember-box,
 .definition-box {
-<<<<<<< HEAD
-    border: 1px solid #ccc;
-    padding: 1rem;
-    width: calc(50% - 0.5rem);
-=======
   border: 1px solid #ccc;
   padding: 1rem;
   width: calc(50% - 0.5rem);
->>>>>>> master
 }
 
 .how-to-remember-box h4,
 .definition-box h4 {
-<<<<<<< HEAD
-    background: #4872fb;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    margin: -1rem -1rem 0.5rem -1rem;
-=======
   background: #4872fb;
   color: white;
   padding: 0.5rem 1rem;
   font-weight: 700;
   margin: -1rem -1rem 0.5rem -1rem;
->>>>>>> master
 }
 
 .code-example {
@@ -280,11 +243,6 @@ strong {
 
 .definition-box code,
 .how-to-remember-box code {
-<<<<<<< HEAD
-    color: #333;
-    font-weight: bold;
-=======
-  color: #333;
+ color: #333;
   font-weight: bold;
->>>>>>> master
 }
