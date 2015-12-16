@@ -15,6 +15,8 @@ A few guidelines for submitting an issue:
 3. Be very detailed in the description of your issue - screenshots are helpful.
 4. Let us know if you would like to make a pull request regarding the issue you are creating.
 
+[Issues page]: https://github.com/LMHT/LMHT.github.io/issues
+
 ## Become a GitHub Contributor
 
 As a contributor, the expectation is that you can use Git and GitHub comfortably enough to fork branches, make pull requests, and practice good commit hygiene.
@@ -32,14 +34,16 @@ $  python -m SimpleHTTPServer
 *  Running on [http://0.0.0.0:8000]
 ```
 
+5. Once you have verified your changes, submit your pull request.
+
+[Contributing to Open Source]:  https://guides.github.com/activities/contributing-to-open-source/#contributing
+[here]:  https://help.github.com/articles/syncing-a-fork/
+[http://0.0.0.0:8000]:  (http://0.0.0.0:8000/)
+
 ## Approval Process
 
 We will try our best to respond within a couple days to the issues and pull requests that are submitted.  We prioritize our sprint plans on a weekly basis.  Every pull request goes through a two thumbs-up verification process, before getting merged and deployed.  Keep up to date on the status of your pull request, until it has been merged.
 
 Always feel free to [email] us with any questions, too.
 
-[Issues page]: https://github.com/LMHT/LMHT.github.io/issues
 [email]: mailto:lmht@adorable.io
-[Contributing to Open Source]:  https://guides.github.com/activities/contributing-to-open-source/#contributing
-[here]:  https://help.github.com/articles/syncing-a-fork/
-[http://0.0.0.0:8000]:  (http://0.0.0.0:8000/)
