@@ -5,7 +5,7 @@ var app = {
   init: function() {
     this.setUpMenu();
     this.setUpFirstView();
-    $('input').val(''); 
+    $('input').val('');
   },
 
   setUpMenu: function() {
@@ -63,6 +63,8 @@ var app = {
       // Load that element
       this.getSection(url);
 
+    } else {
+      this.getSection('welcome.html');
     }
 
   }
