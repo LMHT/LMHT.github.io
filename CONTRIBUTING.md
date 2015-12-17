@@ -6,7 +6,7 @@ A couple of ways to contribute to LMHT is by submitting an issue or a pull reque
 
 ##Submitting an Issue
 
-Create a new issue at the [Issues page], if you notice any errors within the site or in the documentation.  We love hearing your feedback on any new features you would like to see, too.  
+Create a new [issue], if you notice any errors within the site or in the documentation.  We love hearing your feedback on any new features you would like to see, too.  
 
 A few guidelines for submitting an issue:
 
@@ -15,7 +15,7 @@ A few guidelines for submitting an issue:
 3. Be very detailed in the description of your issue - screenshots are helpful.
 4. Let us know if you would like to make a pull request regarding the issue you are creating.
 
-[Issues page]: https://github.com/LMHT/LMHT.github.io/issues
+[issue]: https://github.com/LMHT/LMHT.github.io/issues
 
 ## Become a GitHub Contributor
 
@@ -27,14 +27,13 @@ As a contributor, the expectation is that you can use Git and GitHub comfortably
 2.  Create a branch for your edits. Depending on what you have loaded in your editor, `git checkout -b MyBranch` should suffice.
 3.  It is common practice to name your branch according to what it is fixing or updating. Before submitting these changes, verify that they work.
 4.  Because the project uses Ajax, you must run a local web server to see your changes.
+5. Once you have verified your changes, submit your pull request.
 
 ```
 $  cd myrepo
 $  python -m SimpleHTTPServer
-*  Running on [http://0.0.0.0:8000]
 ```
-
-5. Once you have verified your changes, submit your pull request.
+*  Running on [http://0.0.0.0:8000]
 
 [Contributing to Open Source]:  https://guides.github.com/activities/contributing-to-open-source/#contributing
 [here]:  https://help.github.com/articles/syncing-a-fork/
