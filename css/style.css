@@ -15,55 +15,49 @@
   box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
 }
 
-.ribbon-wrapper-green {
-  width: 85px;
-  height: 88px;
+.ribbon-wrapper-yellow {
+  width: 180px;
+  height: 100%;
   overflow: hidden;
   position: absolute;
   top: -1px;
   right: -1px;
 }
 
-.ribbon-green {
+.ribbon-yellow {
+  background-color: #FFFF00;
+  color: #000000;
   font-weight: bold;
-  font-size: 12px;
-  color: #333;
+  font-size: 16px;
+  left: 45px;
+  position: relative;
+  padding: 5px 5px 5px 10px;
   text-align: center;
   text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
-  -webkit-transform: rotate(45deg);
+  top: 25px;
+  width: 100%;
   -moz-transform:    rotate(45deg);
   -ms-transform:     rotate(45deg);
   -o-transform:      rotate(45deg);
-  position: relative;
-  padding: 7px 0;
-  left: -5px;
-  top: 15px;
-  width: 120px;
-  background-color: #FFFF00;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFF00), to(#FFFF00));
-  background-image: -webkit-linear-gradient(top, #FFFF00, #FFFF00);
-  background-image:    -moz-linear-gradient(top, #FFFF00, #FFFF00);
-  background-image:     -ms-linear-gradient(top, #FFFF00, #FFFF00);
-  background-image:      -o-linear-gradient(top, #FFFF00, #FFFF00);
-  color: #6a6340;
+  -webkit-transform: rotate(45deg);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
   -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
 }
 
-.ribbon-green:before, .ribbon-green:after {
-  content: "";
+.ribbon-yellow:before, .ribbon-yellow:after {
+  bottom: -3px;
   border-top:   3px solid #6e8900;
   border-left:  3px solid transparent;
   border-right: 3px solid transparent;
+  content: "";
   position:absolute;
-  bottom: -3px;
 }
 
-.ribbon-green:before {
+.ribbon-yellow:before {
   left: 0;
 }
-.ribbon-green:after {
+.ribbon-yellow:after {
   right: 0;
 }
 
