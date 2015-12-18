@@ -65,6 +65,11 @@
   text-decoration: none;
 }
 
+.ribbon-yellow:hover {
+  background-color: white;
+  box-shadow: 3px 3px 10px 5px #000;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
