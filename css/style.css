@@ -26,7 +26,7 @@
 
 .ribbon-yellow {
   background-color: #FFFF00;
-  color: #000000;
+  color: #550000;
   font-weight: bold;
   font-size: 16px;
   left: 45px;
@@ -66,8 +66,9 @@
 }
 
 .ribbon-yellow:hover {
-  background-color: white;
-  box-shadow: 3px 3px 10px 5px #000;
+  background-color: #e6d705;
+  box-shadow: 3px 3px 3px 3px #216794;
+  color: #550000;
 }
 
 body {
