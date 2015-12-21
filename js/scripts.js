@@ -63,7 +63,6 @@ var app = {
 
       // Load that element
       this.getSection(url); {
-        // $('input').val('');
       }
 
     } else {
@@ -73,9 +72,6 @@ var app = {
   }
 
 };
-
-
-
 
 $(function() {
   app.init();
