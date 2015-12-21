@@ -10,9 +10,9 @@
   width: 280px;
   background: white;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-  -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
-  box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 .ribbon-wrapper-yellow {
@@ -57,6 +57,7 @@
 .ribbon-yellow:before {
   left: 0;
 }
+
 .ribbon-yellow:after {
   right: 0;
 }
@@ -248,9 +249,28 @@ strong {
   float: right;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+button.play-button {
+  background: url('/button/play.png') no-repeat;
+  width: 2em;
+  height: 1.8em;
+  background-size: 20px 20px;
+  margin-left: 3px;
+}
+
+button.play-button.pause {
+  background: url('/button/pause.png') no-repeat;
+  background-size: 20px 20px;
+}
+
 .how-to-remember,
-.definition,
-.how-to-contribute {
+.definition {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
