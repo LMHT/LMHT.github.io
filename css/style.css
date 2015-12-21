@@ -5,6 +5,72 @@
   padding: 0;
 }
 
+.wrapper {
+  margin: 50px auto;
+  width: 280px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
+}
+
+.ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.ribbon-green {
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #FFFF00;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFF00), to(#FFFF00));
+  background-image: -webkit-linear-gradient(top, #FFFF00, #FFFF00);
+  background-image:    -moz-linear-gradient(top, #FFFF00, #FFFF00);
+  background-image:     -ms-linear-gradient(top, #FFFF00, #FFFF00);
+  background-image:      -o-linear-gradient(top, #FFFF00, #FFFF00);
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}
+
+.ribbon-link {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -183,7 +249,8 @@ strong {
 }
 
 .how-to-remember,
-.definition {
+.definition,
+.how-to-contribute {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -196,14 +263,16 @@ strong {
 }
 
 .how-to-remember-box,
-.definition-box {
+.definition-box,
+.how-to-contribute-box {
   border: 1px solid #ccc;
   padding: 1rem;
   width: calc(50% - 0.5rem);
 }
 
 .how-to-remember-box h4,
-.definition-box h4 {
+.definition-box h4,
+.how-to-contribute-box h4 {
   background: #4872fb;
   color: white;
   padding: 0.5rem 1rem;
