@@ -28,13 +28,11 @@ $(function() {
 
          this._on( this.input, {
            autocompleteselect: function( event, ui ) {
-            //  debugger;
              ui.item.option.selected = true;
              this._trigger( "select", event, {
                item: ui.item.option
              });
              this.element.trigger("change")
-            //  debugger;
            },
 
            autocompletechange: "_removeIfInvalid"
