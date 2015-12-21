@@ -62,8 +62,7 @@ var app = {
       $("option[value='" + url + "']").prop("selected", true);
 
       // Load that element
-      this.getSection(url); {
-      }
+      this.getSection(url); 
 
     } else {
       this.getSection('welcome.html');
