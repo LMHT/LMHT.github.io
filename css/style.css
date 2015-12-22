@@ -270,7 +270,8 @@ button.play-button.pause {
 }
 
 .how-to-remember,
-.definition {
+.definition, 
+.how-to-contribute {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
