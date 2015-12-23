@@ -5,7 +5,7 @@ var app = {
   init: function() {
     this.setUpMenu();
     this.setUpFirstView();
-    $('input').val(''); 
+    $('input').val('');
   },
 
   setUpMenu: function() {
@@ -35,6 +35,7 @@ var app = {
         }, 500);
 
       app.updateURL(url);
+      $('input').val('');
 
     });
 
@@ -61,8 +62,10 @@ var app = {
       $("option[value='" + url + "']").prop("selected", true);
 
       // Load that element
-      this.getSection(url);
+      this.getSection(url); 
 
+    } else {
+      this.getSection('welcome.html');
     }
 
   }
