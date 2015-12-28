@@ -5,7 +5,6 @@ var app = {
   init: function() {
     this.setUpMenu();
     this.setUpFirstView();
-    $('input').val('');
   },
 
   setUpMenu: function() {
@@ -35,7 +34,7 @@ var app = {
         }, 500);
 
       app.updateURL(url);
-      $('input').val('');
+      $(".custom-combobox-input").val('');
 
     });
 
