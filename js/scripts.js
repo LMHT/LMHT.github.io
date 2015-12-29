@@ -37,13 +37,12 @@ var app = {
       app.updateURL(url);
       $('input').val('');
 
-      app.setScroll(url);
-
+      app.scrollToContent(url);
     });
 
   },
 
-  setScroll: function(url) {
+  scrollToContent: function(url) {
     if(url === "welcome.html") {
       $("body").animate({scrollTop:0});
     } else {
