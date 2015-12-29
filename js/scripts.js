@@ -10,7 +10,7 @@ var app = {
   setUpMenu: function() {
     $("#tags").combobox();
 
-    $('#tags').change(function() {
+    $("#tags").change(function() {
       var $selected = $(this);
       var url = $selected.val();
 
@@ -34,7 +34,7 @@ var app = {
         }, 500);
 
       app.updateURL(url);
-      $(".custom-combobox-input").val('');
+      $(".custom-combobox-input").val("");
 
       app.scrollToContent(url);
     });
@@ -42,7 +42,7 @@ var app = {
   },
 
   scrollToContent: function(url) {
-    if(url === "welcome.html") {
+    if (url === "welcome.html") {
       $("body").animate({scrollTop:0});
     } else {
       $("body").animate({scrollTop:300});
@@ -70,10 +70,10 @@ var app = {
       $("option[value='" + url + "']").prop("selected", true);
 
       // Load that element
-      this.getSection(url); 
+      this.getSection(url);
 
     } else {
-      this.getSection('welcome.html');
+      this.getSection("welcome.html");
     }
 
   }
