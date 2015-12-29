@@ -45,9 +45,9 @@ var app = {
 
   setScroll: function(url) {
     if(url === "welcome.html") {
-      $('html, body').animate( {scrollTop:0} );
+      $("body").animate({scrollTop:0});
     } else {
-      $('html, body').animate( {scrollTop:300} );
+      $("body").animate({scrollTop:300});
     }
   },
 
