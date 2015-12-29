@@ -13,10 +13,7 @@ $(function() {
          this.input.keydown(function(event) {
            var enterkey = 13;
            if(event.keyCode === enterkey) {
-             var $firstMenuItem = $($('li')[0]);
-             if ($firstMenuItem.is(':visible')) {
-               $firstMenuItem.click();
-             }
+             $(".ui-autocomplete").find("li").filter(":first:visible").click();
            }
          });
        },
