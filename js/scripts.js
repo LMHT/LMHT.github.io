@@ -37,8 +37,18 @@ var app = {
       app.updateURL(url);
       $('input').val('');
 
+      app.setScroll(url);
+
     });
 
+  },
+
+  setScroll: function(url) {
+    if(url === "welcome.html") {
+      $('html, body').animate( {scrollTop:0} );
+    } else {
+      $('html, body').animate( {scrollTop:300} );
+    }
   },
 
   updateURL: function(url) {
