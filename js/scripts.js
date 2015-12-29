@@ -36,8 +36,17 @@ var app = {
       app.updateURL(url);
       $(".custom-combobox-input").val('');
 
+      app.scrollToContent(url);
     });
 
+  },
+
+  scrollToContent: function(url) {
+    if(url === "welcome.html") {
+      $("body").animate({scrollTop:0});
+    } else {
+      $("body").animate({scrollTop:300});
+    }
   },
 
   updateURL: function(url) {
