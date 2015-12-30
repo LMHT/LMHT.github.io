@@ -293,11 +293,11 @@ h4 {
 
 .bookmark:hover {
   color: rgba(255, 255, 255, 0.85);
-  box-shadow: rgba(30, 222, 54, 0.7) 0 0px 0px 50px inset;
+  box-shadow: rgba(10, 0, 0, 0.7) 0 0px 0px 50px inset;
 }
 
+
 .bookmark p{
-  text-decoration: underline;
   font-family: sans-serif;
   color:#2980b9;
 
