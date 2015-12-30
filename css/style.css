@@ -255,14 +255,15 @@ h4 {
 
 .bookmark {
   z-index: 2000;
-  right: 0;
-  width:100px;
-  height:150px;
-  background: #FFFF00;
-  position: fixed;
+  margin-left: 1050px;
+  width:150px;
+  height:139px;
+  background: yellow;
+  position: absolute;
   text-align: center;
-  padding: 0 0;
-  right: 10px;
+  padding: 12px 0;
+  left: 50px;
+  -webkit-transition: all 0.5s ease;
 }
 
 .bookmark:after {
@@ -270,8 +271,8 @@ h4 {
   position: absolute;
   bottom:0;
   left:0;
-  border-top:50px solid #FFFF00;
-  border-right:50px solid #2980b9;
+  border-top:75px solid yellow;
+  border-right:75px solid #2980b9;
 }
 
 .bookmark:before {
@@ -279,13 +280,12 @@ h4 {
   position: absolute;
   bottom:0;
   right:0;
-  border-top:50px solid #FFFF00;
-  border-left:50px solid #2980b9;
+  border-top:75px solid yellow;
+  border-left:75px solid #2980b9;
 }
 
-.bookmark:hover {
-  color: rgba(255, 255, 255, 0.85);
-  box-shadow: rgba(10, 0, 0, 0.7) 0 0px 0px 50px inset;
+.bookmark:hover{
+  height: 200px;
 }
 
 .bookmark p{
