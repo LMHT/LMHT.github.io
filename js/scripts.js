@@ -5,13 +5,12 @@ var app = {
   init: function() {
     this.setUpMenu();
     this.setUpFirstView();
-    $('input').val('');
   },
 
   setUpMenu: function() {
     $("#tags").combobox();
 
-    $('#tags').change(function() {
+    $("#tags").change(function() {
       var $selected = $(this);
       var url = $selected.val();
 
@@ -35,10 +34,19 @@ var app = {
         }, 500);
 
       app.updateURL(url);
-      $('input').val('');
+      $(".custom-combobox-input").val("");
 
+      app.scrollToContent(url);
     });
 
+  },
+
+  scrollToContent: function(url) {
+    if (url === "welcome.html") {
+      $("body").animate({scrollTop:0});
+    } else {
+      $("body").animate({scrollTop:300});
+    }
   },
 
   updateURL: function(url) {
@@ -62,10 +70,10 @@ var app = {
       $("option[value='" + url + "']").prop("selected", true);
 
       // Load that element
-      this.getSection(url); 
+      this.getSection(url);
 
     } else {
-      this.getSection('welcome.html');
+      this.getSection("welcome.html");
     }
 
   }
