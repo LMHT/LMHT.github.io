@@ -253,19 +253,11 @@ h4 {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-.bookmark{
-  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-}
-
 .bookmark {
   z-index: 2000;
   right: 0;
   width:100px;
-  height:160px;
+  height:150px;
   background: #FFFF00;
   position: fixed;
   text-align: center;
@@ -296,11 +288,9 @@ h4 {
   box-shadow: rgba(10, 0, 0, 0.7) 0 0px 0px 50px inset;
 }
 
-
 .bookmark p{
   font-family: sans-serif;
   color:#2980b9;
-
 }
 
 .site-footer {
