@@ -195,7 +195,7 @@ h4 {
 }
 
 .how-to-remember,
-.definition, 
+.definition,
 .how-to-contribute {
   display: -webkit-box;
   display: -webkit-flex;
@@ -253,61 +253,54 @@ h4 {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-.ribbon-wrapper-yellow {
-  width: 180px;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: -1px;
-  right: -1px;
+.bookmark{
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 }
 
-.ribbon-yellow {
-  background-color: #FFFF00;
-  color: #550000;
-  font-weight: bold;
-  font-size: 16px;
-  left: 45px;
-  position: relative;
-  padding: 5px 5px 5px 10px;
-  text-align: center;
-  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
-  top: 25px;
-  width: 100%;
-  -moz-transform:    rotate(45deg);
-  -ms-transform:     rotate(45deg);
-  -o-transform:      rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-}
-
-.ribbon-yellow:before, .ribbon-yellow:after {
-  bottom: -3px;
-  border-top:   3px solid #6e8900;
-  border-left:  3px solid transparent;
-  border-right: 3px solid transparent;
-  content: "";
-  position:absolute;
-}
-
-.ribbon-yellow:before {
-  left: 0;
-}
-
-.ribbon-yellow:after {
+.bookmark {
+  z-index: 2000;
   right: 0;
+  width:100px;
+  height:160px;
+  background: #FFFF00;
+  position: fixed;
+  text-align: center;
+  padding: 0 0;
+  right: 10px;
 }
 
-.ribbon-yellow:hover {
-  background-color: #e6d705;
-  box-shadow: 3px 3px 3px 3px #216794;
-  color: #550000;
+.bookmark:after {
+  content:'';
+  position: absolute;
+  bottom:0;
+  left:0;
+  border-top:50px solid #FFFF00;
+  border-right:50px solid #2980b9;
 }
 
-.ribbon-link {
-  text-decoration: none;
+.bookmark:before {
+  content:'';
+  position: absolute;
+  bottom:0;
+  right:0;
+  border-top:50px solid #FFFF00;
+  border-left:50px solid #2980b9;
+}
+
+.bookmark:hover {
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(30, 222, 54, 0.7) 0 0px 0px 50px inset;
+}
+
+.bookmark p{
+  text-decoration: underline;
+  font-family: sans-serif;
+  color:#2980b9;
+
 }
 
 .site-footer {
