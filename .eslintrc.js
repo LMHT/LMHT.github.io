@@ -2,7 +2,7 @@ module.exports = {
     "rules": {
         "indent": [
             2,
-            4
+            "tab"
         ],
         "quotes": [
             2,
