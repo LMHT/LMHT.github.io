@@ -258,8 +258,8 @@ h4 {
   z-index: 20001;
   top: 0;
   right: 1%;
-  height: 8em;
-  width: 5.5em;
+  height: 6em;
+  width: 4em;
   background-color: yellow;
   background-image:
   linear-gradient(
@@ -272,9 +272,10 @@ h4 {
 
 .bookmark p{
   font-family: font-family: Helvetica, Arial, Sans-Serif;
-  margin-left: 3px;
-  font-size: 20px;
+  text-align: center;
+  font-size: 14px;
   color: black;
+  padding: 5px;
 }
 
 .bookmark:before,
@@ -301,8 +302,8 @@ h4 {
 }
 
 .bookmark img{
-    width: 60px;
-    margin-left: 20px;
+  width: 40px;
+  margin-left: 15px;
  }
 
 .bookmark:hover{
