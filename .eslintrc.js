@@ -1,4 +1,9 @@
 module.exports = {
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": "eslint:recommended"
     "rules": {
         "indent": [
             2,
@@ -17,8 +22,4 @@ module.exports = {
             "always"
         ]
     },
-    "env": {
-        "browser": true
-    },
-    "extends": "eslint:recommended"
 };
