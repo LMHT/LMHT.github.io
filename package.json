@@ -1,0 +1,22 @@
+{
+  "name": "lmht",
+  "version": "1.0.0",
+  "description": "Welcome to [LMHT].  This is an open source code repository to help Spanish speakers translate and understand HTML tags.  LMHT was originally started as a [YWebCA] project by Team Open Brace in the Summer of 2015. [Adorable] and other contributors are working towards expanding this project into a valuable learning tool for bilingual programmers.",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adorableio/LMHT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adorableio/LMHT/issues"
+  },
+  "homepage": "https://github.com/adorableio/LMHT#readme",
+  "devDependencies": {
+    "eslint": "^1.10.3"
+  }
+}
