@@ -308,7 +308,7 @@ h4 {
 
 .bookmark:hover:after {
   border: solid #e6d705;
-  box-shadow: 5px 0 0 0 #333;
+  box-shadow: 5px 0 0 0 #545654;
   height: 20px;
   border-right-width: 23px;
   border-left-width: 23px;
@@ -333,7 +333,7 @@ h4 {
 
 .bookmark:hover{
   background-color: #e6d705;
-  box-shadow: 5px 0 0 0 #333;
+  box-shadow: 5px 0 0 0 #545654;
   color: #550000;
 }
 
