@@ -255,42 +255,86 @@ h4 {
 
 .bookmark {
   z-index: 2000;
-  margin-left: 1050px;
-  width:150px;
-  height:139px;
-  background: yellow;
-  position: absolute;
-  text-align: center;
-  padding: 12px 0;
-  left: 50px;
-  -webkit-transition: all 0.5s ease;
+  width: 92px;
+  height: 120px;
+  border: none;
+  box-shadow: none;
+  background-color: yellow;
+  position: fixed;
+  right: 10px;
 }
 
 .bookmark:after {
-  content:'';
+  border: solid yellow;
+  height: 20px;
+  border-right-width: 23px;
+  border-left-width: 23px;
+  border-bottom: 10px solid transparent;
   position: absolute;
-  bottom:0;
-  left:0;
-  border-top:75px solid yellow;
-  border-right:75px solid #2980b9;
+  top: 95px;
+  left: 46px;
+  width: 0;
+  content: '';
+  margin-top: 20px;
 }
 
 .bookmark:before {
-  content:'';
+  border: solid yellow;
+  border-right-width: 23px;
+  border-left-width: 23px;
+  border-bottom: 10px solid transparent;
   position: absolute;
-  bottom:0;
-  right:0;
-  border-top:75px solid yellow;
-  border-left:75px solid #2980b9;
+  top: 95px;
+  left: 0;
+  height: 0;
+  content: '';
+  height: 20px;
+  margin-top: 20px;
+}
+
+.bookmark:hover:before {
+  border: solid #e6d705;
+  border-right-width: 23px;
+  border-left-width: 23px;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  height: 0;
+  content: '';
+  height: 20px;
+  margin-top: 20px;
+}
+
+.bookmark:hover:after {
+  border: solid #e6d705;
+  box-shadow: 5px 0 0 0 #333;
+  height: 20px;
+  border-right-width: 23px;
+  border-left-width: 23px;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 95px;
+  left: 46px;
+  width: 0;
+  content: '';
+  margin-top: 20px;
+}
+
+.bookmark{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: black;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
 }
 
 .bookmark:hover{
-  height: 200px;
-}
-
-.bookmark p{
-  font-family: sans-serif;
-  color:#2980b9;
+  background-color: #e6d705;
+  box-shadow: 5px 0 0 0 #333;
+  color: #550000;
 }
 
 .site-footer {
