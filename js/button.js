@@ -1,3 +1,5 @@
+/*global $:true*/
+/*eslint no-undef: 2*/
 var $previousButton;
 var audio = new Audio();
 var paused = true;

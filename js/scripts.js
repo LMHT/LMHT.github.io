@@ -1,3 +1,5 @@
+/*global $:true*/
+/*eslint no-undef: 2*/
 // Generic object to namespace our app (keep variables out of global scope) and keep things organized!
 var app = {
 

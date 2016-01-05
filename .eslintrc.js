@@ -8,13 +8,13 @@ module.exports = {
       2,
       2
     ],
-    "quotes": [
-      2,
-      "double"
-    ],
     "linebreak-style": [
       2,
       "unix"
+    ],
+    "quotes": [
+      2,
+      "double"
     ],
     "semi": [
       2,
