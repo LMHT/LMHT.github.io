@@ -1,10 +1,6 @@
 module.exports = {
-  "ecmaFeatures": {
-    modules: true
-  }
   "env": {
     "browser": true,
-    "node": true
   },
   "extends": "eslint:recommended"
   "rules": {
