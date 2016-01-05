@@ -45,7 +45,7 @@ $(function() {
         },
 
         autocompletechange: "_removeIfInvalid"
-     });
+      });
     },
 
     _createShowAllButton: function() {
@@ -75,8 +75,8 @@ $(function() {
             return;
           }
 
-             // Pass empty string as value to search for, displaying all results
-            input.autocomplete("search", "");
+          // Pass empty string as value to search for, displaying all results
+          input.autocomplete("search", "");
         });
     },
 
