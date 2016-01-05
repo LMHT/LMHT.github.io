@@ -282,7 +282,6 @@ h4 {
 .bookmark:before,
 .bookmark:after{
   content: '';
-  display: block;
   position: absolute;
 }
 
@@ -294,11 +293,11 @@ h4 {
   linear-gradient(
     -45deg,
     transparent 50%,
-    yellow 50%),
+    yellow 51%),
   linear-gradient(
     45deg,
   transparent 50%,
-    yellow 50%);
+    yellow 51%);
   z-index: -1;
 }
 
@@ -310,7 +309,6 @@ h4 {
 .bookmark:hover{
   -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
 }
-
 
 .site-footer {
   margin: 2rem 0;
