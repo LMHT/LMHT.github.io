@@ -12,6 +12,7 @@ module.exports = {
       2,
       "unix"
     ],
+    "no-trailing-spaces": 2,
     "quotes": [
       2,
       "double"
