@@ -73,14 +73,16 @@ nav.sticky-nav-color {
   padding: 0 0px;
 }
 
-.fixed .nav-inner-most {
-  background: url('/img/lmht-logo.png') no-repeat;
-  display: block;
-  background-position: 10px 0px;
-  background-size: 200px 50px;
-  margin-left: 28px;
-  background-position: left;
+@media all and (min-width: 1140px) {
+  .fixed .nav-inner-most {
+    background: url('/img/lmht-logo.png') no-repeat;
+    display: block;
+    background-position: 10px 0px;
+    background-size: 200px 50px;
+    margin-left: 28px;
+    background-position: left;
   }
+}
 
 select {
   width: 300px;
