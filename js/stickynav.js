@@ -1,5 +1,3 @@
-/*global $:true*/
-/*eslint no-undef: 2*/
 $(document).ready(function() {
 
   // define variables

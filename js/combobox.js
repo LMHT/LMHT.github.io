@@ -1,5 +1,3 @@
-/*global $:true*/
-/*eslint no-undef: 2*/
 $(function() {
   $.widget("custom.combobox", {
     _create: function() {
