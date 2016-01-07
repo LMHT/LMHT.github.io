@@ -73,14 +73,16 @@ nav.sticky-nav-color {
   padding: 0 0px;
 }
 
-.fixed .nav-inner-most {
-  background: url('/img/lmht-logo.png') no-repeat;
-  display: block;
-  background-position: 10px 0px;
-  background-size: 200px 50px;
-  margin-left: 28px;
-  background-position: left;
+@media all and (min-width: 1140px) {
+  .fixed .nav-inner-most {
+    background: url('/img/lmht-logo.png') no-repeat;
+    display: block;
+    background-position: 10px 0px;
+    background-size: 200px 50px;
+    margin-left: 28px;
+    background-position: left;
   }
+}
 
 select {
   width: 300px;
@@ -195,7 +197,7 @@ h4 {
 }
 
 .how-to-remember,
-.definition, 
+.definition,
 .how-to-contribute {
   display: -webkit-box;
   display: -webkit-flex;
@@ -253,61 +255,61 @@ h4 {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-.ribbon-wrapper-yellow {
-  width: 180px;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: -1px;
-  right: -1px;
+.bookmark {
+  position: fixed;
+  z-index: 20001;
+  top: 0;
+  right: 1%;
+  height: 6em;
+  width: 4.4em;
+  background-color: yellow;
+  background-image:
+  linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0.5) 5px,
+    hsla(0, 0%, 100%, 0) 25px);
+  box-sizing: border-box;
+  padding-top: 30px;
 }
 
-.ribbon-yellow {
-  background-color: #FFFF00;
-  color: #550000;
-  font-weight: bold;
-  font-size: 16px;
-  left: 45px;
-  position: relative;
-  padding: 5px 5px 5px 10px;
+.bookmark p{
+  font-family: font-family: Helvetica, Arial, Sans-Serif;
   text-align: center;
-  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
-  top: 25px;
+  font-size: 13px;
+  font-weight: 900;
+  color: black;
+  padding: 5px;
+}
+
+.bookmark:before,
+.bookmark:after{
+  content: '';
+  position: absolute;
+}
+
+.bookmark:before {
+  bottom: -50%;
+  height: 100%;
   width: 100%;
-  -moz-transform:    rotate(45deg);
-  -ms-transform:     rotate(45deg);
-  -o-transform:      rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  background-image:
+  linear-gradient(
+    -45deg,
+    transparent 50%,
+    yellow 51%),
+  linear-gradient(
+    45deg,
+  transparent 50%,
+    yellow 51%);
+  z-index: -1;
 }
 
-.ribbon-yellow:before, .ribbon-yellow:after {
-  bottom: -3px;
-  border-top:   3px solid #6e8900;
-  border-left:  3px solid transparent;
-  border-right: 3px solid transparent;
-  content: "";
-  position:absolute;
-}
+.bookmark img{
+  width: 40px;
+  margin-left: 20px;
+ }
 
-.ribbon-yellow:before {
-  left: 0;
-}
-
-.ribbon-yellow:after {
-  right: 0;
-}
-
-.ribbon-yellow:hover {
-  background-color: #e6d705;
-  box-shadow: 3px 3px 3px 3px #216794;
-  color: #550000;
-}
-
-.ribbon-link {
-  text-decoration: none;
+.bookmark:hover{
+  -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
 }
 
 .site-footer {
