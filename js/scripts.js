@@ -22,7 +22,7 @@ var app = {
 
     $.ajax({
 
-      url: "elements/" + url
+      url: "elements/" + url + ".html"
 
     }).success(function(html) {
 
@@ -73,7 +73,7 @@ var app = {
       this.getSection(url);
 
     } else {
-      this.getSection("welcome.html");
+      this.getSection("#welcome");
     }
 
   }
