@@ -1,13 +1,12 @@
-
 $(document).ready(function() {
 
   // define variables
   var navOffset, scrollPos = 0;
 
   // add utility wrapper elements for positioning
-  $("nav").wrap('<div class="sticky-combo"></div>');
-  $("nav").wrapInner('<div class="nav-inner"></div>');
-  $(".nav-inner").wrapInner('<div class="nav-inner-most"></div>');
+  $("nav").wrap("<div class='sticky-combo'></div>");
+  $("nav").wrapInner("<div class='nav-inner'></div>");
+  $(".nav-inner").wrapInner("<div class='nav-inner-most'></div>");
 
   // function to run on page load and window resize
   function stickyUtility() {

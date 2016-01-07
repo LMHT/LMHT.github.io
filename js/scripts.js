@@ -15,7 +15,7 @@ var app = {
       var url = $selected.val();
 
       app.getSection(url);
-    })
+    });
   },
 
   getSection: function(url) {

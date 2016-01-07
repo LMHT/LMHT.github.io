@@ -1,24 +1,28 @@
 module.exports = {
-    "rules": {
-        "indent": [
-            2,
-            4
-        ],
-        "quotes": [
-            2,
-            "double"
-        ],
-        "linebreak-style": [
-            2,
-            "unix"
-        ],
-        "semi": [
-            2,
-            "always"
-        ]
-    },
-    "env": {
-        "browser": true
-    },
-    "extends": "eslint:recommended"
+  "env": {
+    "browser": true,
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "$": true
+  },
+  "rules": {
+    "indent": [
+      2,
+      2
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "no-trailing-spaces": 2,
+    "quotes": [
+      2,
+      "double"
+    ],
+    "semi": [
+      2,
+      "always"
+    ]
+  },
 };
