@@ -20,6 +20,8 @@ var app = {
 
   getSection: function(url) {
 
+    url = url.replace("#", "");
+
     $.ajax({
 
       url: "elements/" + url + ".html"
