@@ -8,33 +8,35 @@ var app = {
   },
 
   setUpMenu: function() {
-    $("#tags").combobox();
+    $('#tags').combobox();
 
-    $("#tags").change(function() {
+    $('#tags').change(function() {
       var $selected = $(this);
       var url = $selected.val();
 
       app.getSection(url);
-    })
+    });
   },
 
   getSection: function(url) {
 
+    url = url.replace('#', '');
+
     $.ajax({
 
-      url: "elements/" + url
+      url: 'elements/' + url + '.html'
 
     }).success(function(html) {
 
       // Replace the card with the new content and fade it back in.
-      $("#main")
+      $('#main')
         .html(html)
         .animate({
           opacity: 1
         }, 500);
 
       app.updateURL(url);
-      $(".custom-combobox-input").val("");
+      $('.custom-combobox-input').val('');
 
       app.scrollToContent(url);
     });
@@ -42,10 +44,10 @@ var app = {
   },
 
   scrollToContent: function(url) {
-    if (url === "welcome.html") {
-      $("body").animate({scrollTop:0});
+    if (url === 'welcome.html') {
+      $('body').animate({scrollTop:0});
     } else {
-      $("body").animate({scrollTop:300});
+      $('body').animate({scrollTop:300});
     }
   },
 
@@ -58,22 +60,22 @@ var app = {
 
     // Look for hash
     var hash = window.location.hash;
-    var url = hash.replace("#", "");
+    var url = hash.replace('#', '');
 
     // If there is one...
     if (url) {
 
       // Deselect the currently selected option
-      $("#tags option").prop("selected", false);
+      $('#tags option').prop('selected', false);
 
       // Select the option that matches the hash
-      $("option[value='" + url + "']").prop("selected", true);
+      $('option[value="' + url + '"]').prop('selected', true);
 
       // Load that element
       this.getSection(url);
 
     } else {
-      this.getSection("welcome.html");
+      this.getSection('#welcome');
     }
 
   }

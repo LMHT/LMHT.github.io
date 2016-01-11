@@ -6,13 +6,13 @@ var setPlaying = function ($button) {
   $button.addClass('pause');
   audio.play();
   paused = false;
-}
+};
 
 var setPause = function ($button) {
   $button.removeClass('pause');
   audio.pause();
   paused = true;
-}
+};
 
 audio.onpause = setPause;
 
