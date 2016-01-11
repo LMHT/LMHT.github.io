@@ -18,7 +18,7 @@ module.exports = {
     "no-trailing-spaces": 2,
     "quotes": [
       2,
-      "double"
+      "single"
     ],
     "semi": [
       2,

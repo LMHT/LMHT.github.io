@@ -1,48 +1,48 @@
 $(function() {
-  $.widget("custom.combobox", {
+  $.widget('custom.combobox', {
     _create: function() {
-      this.wrapper = $("<span>")
-        .addClass("custom-combobox")
+      this.wrapper = $('<span>')
+        .addClass('custom-combobox')
         .insertAfter(this.element);
 
       this.element.hide();
       this._createAutocomplete();
       this._createShowAllButton();
-      this.input.attr("placeholder", this.element.attr("placeholder"));
+      this.input.attr('placeholder', this.element.attr('placeholder'));
 
       this.input.keydown(function(event) {
         var enterkey = 13;
         if (event.keyCode === enterkey) {
-          $(".ui-autocomplete").find("li").filter(":first:visible").click();
+          $('.ui-autocomplete').find('li').filter(':first:visible').click();
         }
       });
     },
 
     _createAutocomplete: function() {
-      var selected = this.element.children(":selected"),
-        value = selected.val() ? selected.text() : "";
+      var selected = this.element.children(':selected'),
+        value = selected.val() ? selected.text() : '';
 
-      this.input = $("<input>")
+      this.input = $('<input>')
         .appendTo(this.wrapper)
         .val( value )
-        .attr("title", "")
-        .addClass("custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left")
+        .attr('title', '')
+        .addClass('custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left')
         .autocomplete({
           delay: 0,
           minLength: 0,
-          source: $.proxy(this, "_source")
+          source: $.proxy(this, '_source')
         });
 
       this._on(this.input, {
         autocompleteselect: function(event, ui) {
           ui.item.option.selected = true;
-          this._trigger("select", event, {
+          this._trigger('select', event, {
             item: ui.item.option
           });
-          this.element.trigger("change");
+          this.element.trigger('change');
         },
 
-        autocompletechange: "_removeIfInvalid"
+        autocompletechange: '_removeIfInvalid'
       });
     },
 
@@ -50,20 +50,20 @@ $(function() {
       var input = this.input,
         wasOpen = false;
 
-      $("<a>")
-        .attr("tabIndex", -1)
-        .attr("title", "Show All Items")
+      $('<a>')
+        .attr('tabIndex', -1)
+        .attr('title', 'Show All Items')
         .appendTo(this.wrapper)
         .button({
           icons: {
-            primary: "ui-icon-triangle-1-s"
+            primary: 'ui-icon-triangle-1-s'
           },
           text: false
         })
-        .removeClass("ui-corner-all")
-        .addClass("custom-combobox-toggle ui-corner-right")
+        .removeClass('ui-corner-all')
+        .addClass('custom-combobox-toggle ui-corner-right')
         .mousedown(function() {
-          wasOpen = input.autocomplete("widget").is(":visible");
+          wasOpen = input.autocomplete('widget').is(':visible');
         })
         .click(function() {
           input.focus();
@@ -74,13 +74,13 @@ $(function() {
           }
 
           // Pass empty string as value to search for, displaying all results
-          input.autocomplete("search", "");
+          input.autocomplete('search', '');
         });
     },
 
     _source: function(request, response) {
-      var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term), "i");
-      response(this.element.children("option").map(function() {
+      var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term), 'i');
+      response(this.element.children('option').map(function() {
         var text = $(this).text();
         if (this.value && (!request.term || matcher.test(text)))
           return {
@@ -102,7 +102,7 @@ $(function() {
       var value = this.input.val(),
         valueLowerCase = value.toLowerCase(),
         valid = false;
-      this.element.children("option").each(function() {
+      this.element.children('option').each(function() {
         if ($(this).text().toLowerCase() === valueLowerCase) {
           this.selected = valid = true;
           return false;
@@ -116,10 +116,10 @@ $(function() {
 
       // Remove invalid value
       this.input
-        .val("")
-        .attr("title", value + " didn't match any item");
-      this.element.val("");
-      this.input.autocomplete("instance").term = "";
+        .val('')
+        .attr('title', value + ' did not match any item');
+      this.element.val('');
+      this.input.autocomplete('instance').term = '';
     },
 
     _destroy: function() {
