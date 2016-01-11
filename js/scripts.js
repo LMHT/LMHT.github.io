@@ -20,7 +20,7 @@ var app = {
 
   getSection: function(url) {
 
-    url = url.replace("#", "");
+    url = url.replace('#', '');
 
     $.ajax({
 
