@@ -255,6 +255,7 @@ h4 {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
+@media all and (min-width: 1140px) {
 .bookmark {
   position: fixed;
   z-index: 20001;
@@ -271,7 +272,9 @@ h4 {
   box-sizing: border-box;
   padding-top: 30px;
 }
+}
 
+@media all and (min-width: 1140px) {
 .bookmark p{
   font-family: font-family: Helvetica, Arial, Sans-Serif;
   text-align: center;
@@ -280,13 +283,17 @@ h4 {
   color: black;
   padding: 5px;
 }
+}
 
+@media all and (min-width: 1140px) {
 .bookmark:before,
 .bookmark:after{
   content: '';
   position: absolute;
 }
+}
 
+@media all and (min-width: 1140px) {
 .bookmark:before {
   bottom: -50%;
   height: 100%;
@@ -302,14 +309,19 @@ h4 {
     yellow 51%);
   z-index: -1;
 }
+}
 
+@media all and (min-width: 1140px) {
 .bookmark img{
   width: 40px;
   margin-left: 20px;
  }
+}
 
+@media all and (min-width: 1140px) {
 .bookmark:hover{
   -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
+}
 }
 
 .site-footer {
