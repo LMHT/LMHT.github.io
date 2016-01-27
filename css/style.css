@@ -261,6 +261,7 @@ h4 {
     height: 0;
   }
 }
+
 @media all and (min-width: 1140px) {
 
 .bookmark {
@@ -280,7 +281,7 @@ h4 {
   padding-top: 30px;
 }
 
-.bookmark p{
+.bookmark p {
   font-family: font-family: Helvetica, Arial, Sans-Serif;
   text-align: center;
   font-size: 13px;
@@ -290,7 +291,7 @@ h4 {
 }
 
 .bookmark:before,
-.bookmark:after{
+.bookmark:after {
   content: '';
   position: absolute;
 }
