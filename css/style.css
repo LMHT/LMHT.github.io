@@ -12,16 +12,77 @@ body {
   line-height: 1.45;
 }
 
+@media all and (max-width: 1140px) {
+  .bookmark {
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@media all and (min-width: 1140px) {
+  .bookmark {
+    background-color: yellow;
+    background-image:
+    linear-gradient(
+      hsla(0, 0%, 100%, 0),
+      hsla(0, 0%, 100%, 0.5) 5px,
+      hsla(0, 0%, 100%, 0) 25px);
+    box-sizing: border-box;
+    height: 6em;
+    padding-top: 30px;
+    position: fixed;
+    right: 1%;
+    top: 0;
+    width: 4.4em;
+    z-index: 20001;
+  }
+
+  .bookmark p {
+    color: black;
+    font-family: font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .bookmark:before,
+  .bookmark:after {
+    content: '';
+    position: absolute;
+  }
+
+  .bookmark:before {
+    background-image:
+    linear-gradient(
+      -45deg,
+      transparent 50%,
+      yellow 51%),
+    linear-gradient(
+      45deg,
+    transparent 50%,
+      yellow 51%);
+    z-index: -1;
+    bottom: -50%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bookmark img {
+    margin-left: 20px;
+    width: 40px;
+   }
+
+  .bookmark:hover {
+    -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
+  }
+}
+
 .site-header {
   background: #2980b9;
   color: white;
   margin: 0 0 2rem 0;
   padding: 20px 0 0;
-}
-
-.inside {
-  margin: 0 auto;
-  max-width: 900px;
 }
 
 .site-title p {
@@ -76,11 +137,11 @@ nav.sticky-nav-color {
 @media all and (min-width: 1140px) {
   .fixed .nav-inner-most {
     background: url('/img/lmht-logo.png') no-repeat;
-    display: block;
+    background-position: left;
     background-position: 10px 0px;
     background-size: 200px 50px;
+    display: block;
     margin-left: 28px;
-    background-position: left;
   }
 }
 
@@ -125,22 +186,23 @@ select {
   padding: 1em 4em 1em;
 }
 
-.fixed-dropdown {
-  position: fixed;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.ui-menu {
-  z-index: 500;
+.wrapper {
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 50px auto;
+  width: 280px;
 }
 
 #main {
   margin-top: 50px;
+}
+
+.inside {
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .article {
@@ -174,10 +236,10 @@ button {
 
 button.play-button {
   background: url('/button/play.png') no-repeat;
-  width: 2em;
-  height: 1.8em;
   background-size: 20px 20px;
+  height: 1.8em;
   margin-left: 3px;
+  width: 2em;
 }
 
 button.play-button.pause {
@@ -189,11 +251,6 @@ button.play-button.pause {
 .how-to-remember-box code {
   color: #333;
   font-weight: bold;
-}
-
-h4 {
-  font-size: 1em;
-  padding: 1em;
 }
 
 .how-to-remember,
@@ -210,9 +267,9 @@ h4 {
 .how-to-remember,
 .definition,
 .how-to-contribute {
+  -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
 }
 
 .how-to-remember-box,
@@ -233,6 +290,11 @@ h4 {
   padding: 0.5rem 1rem;
 }
 
+h4 {
+  font-size: 1em;
+  padding: 1em;
+}
+
 .code-example {
   background: #2c3e50;
   color: white;
@@ -245,83 +307,20 @@ h4 {
   color: yellow;
 }
 
-.wrapper {
-  margin: 50px auto;
-  width: 280px;
-  background: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-}
-
-@media all and (max-width: 1140px) {
-  .bookmark {
-    visibility: hidden;
-    height: 0;
-  }
-}
-
-@media all and (min-width: 1140px) {
-
-.bookmark {
-  position: fixed;
-  z-index: 20001;
-  top: 0;
-  right: 1%;
-  height: 6em;
-  width: 4.4em;
-  background-color: yellow;
-  background-image:
-  linear-gradient(
-    hsla(0, 0%, 100%, 0),
-    hsla(0, 0%, 100%, 0.5) 5px,
-    hsla(0, 0%, 100%, 0) 25px);
-  box-sizing: border-box;
-  padding-top: 30px;
-}
-
-.bookmark p {
-  font-family: font-family: Helvetica, Arial, Sans-Serif;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 900;
-  color: black;
-  padding: 5px;
-}
-
-.bookmark:before,
-.bookmark:after {
-  content: '';
-  position: absolute;
-}
-
-.bookmark:before {
-  bottom: -50%;
-  height: 100%;
-  width: 100%;
-  background-image:
-  linear-gradient(
-    -45deg,
-    transparent 50%,
-    yellow 51%),
-  linear-gradient(
-    45deg,
-  transparent 50%,
-    yellow 51%);
-  z-index: -1;
-}
-
-.bookmark img {
-  width: 40px;
-  margin-left: 20px;
- }
-
-.bookmark:hover {
-  -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
-}
-}
-
 .site-footer {
   margin: 2rem 0;
+}
+
+.ui-menu {
+  z-index: 500;
+}
+
+.fixed-dropdown {
+  position: fixed;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
