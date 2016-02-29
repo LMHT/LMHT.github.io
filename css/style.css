@@ -205,7 +205,7 @@ select {
   max-width: 900px;
 }
 
-.article {
+.article, .site-footer {
   background: white;
   margin: 0 0 3rem 0;
 }
@@ -262,14 +262,10 @@ button.play-button.pause {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-}
-
-.how-to-remember,
-.definition,
-.how-to-contribute {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+
 }
 
 .how-to-remember-box,
@@ -282,7 +278,8 @@ button.play-button.pause {
 
 .how-to-remember-box h4,
 .definition-box h4,
-.how-to-contribute-box h4 {
+.how-to-contribute-box h4,
+.site-footer h4 {
   background: #4872fb;
   color: white;
   font-weight: 700;
@@ -308,7 +305,20 @@ h4 {
 }
 
 .site-footer {
-  margin: 2rem 0;
+  border: 0 solid #ccc;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1rem;
+  width: calc(100% - .5rem);
+}
+ .site-footer ul {
+   padding: 10px;
+ }
+
+.site-footer p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
 }
 
 .ui-menu {
