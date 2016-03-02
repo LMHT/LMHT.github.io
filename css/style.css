@@ -265,7 +265,6 @@ button.play-button.pause {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-
 }
 
 .how-to-remember-box,
@@ -311,8 +310,10 @@ h4 {
   padding: 1rem;
   width: calc(100% - .5rem);
 }
+
  .site-footer ul {
    padding: 10px;
+   list-style-type: none;
  }
 
 .site-footer p {
