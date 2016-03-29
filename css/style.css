@@ -202,7 +202,7 @@ select {
 
 .inside {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 80%;
 }
 
 .article, .site-footer {
@@ -215,6 +215,10 @@ select {
 }
 
 .article-header audio {
+  float: right;
+}
+
+.tag {
   float: right;
 }
 
@@ -247,14 +251,17 @@ button.play-button.pause {
   background-size: 20px 20px;
 }
 
-.definition-box code,
+.spanish-def code,
+.spanish-how-to code,
+.english-def code,
+.english-how-to code,
 .how-to-remember-box code {
   color: #333;
   font-weight: bold;
 }
 
-.how-to-remember,
-.definition,
+.english-section,
+.spanish-section,
 .how-to-contribute {
   display: -webkit-box;
   display: -webkit-flex;
@@ -267,20 +274,23 @@ button.play-button.pause {
   -webkit-justify-content: space-between;
 }
 
-.how-to-remember-box,
-.definition-box,
+.spanish-def,
+.spanish-how-to,
+.english-def,
+.english-how-to,
 .how-to-contribute-box {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  width: calc(50% - 0.5rem);
+  border: 1px solid black;
+  padding: 4rem;
+  width: calc(40% - 0.1rem);
 }
 
-.how-to-remember-box h4,
-.definition-box h4,
+.english-def h4,
+.english-how-to h4,
+.spanish-def h4,
+.spanish-how-to h4,
 .how-to-contribute-box h4,
 .site-footer h4 {
-  background: #4872fb;
-  color: white;
+  color: black;
   font-weight: 700;
   margin: -1rem -1rem 0.5rem -1rem;
   padding: 0.5rem 1rem;
