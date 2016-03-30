@@ -17,6 +17,27 @@ body {
     height: 0;
     visibility: hidden;
   }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: auto;
+  }
+
+  .horizontal-ribbon {
+    display: flex;
+    height: 3em;
+    width: 100%;
+    background-color: blue;
+  }
+
+  .horizontal-lmht {
+    display: flex;
+    height: 3em;
+    width: 100%;
+    background-color: yellow;
+  }
 }
 
 @media all and (min-width: 1140px) {
