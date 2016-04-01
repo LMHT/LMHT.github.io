@@ -4,7 +4,8 @@ module.exports = {
   },
   "extends": "eslint:recommended",
   "globals": {
-    "$": true
+    "$": true,
+    "ga": true
   },
   "rules": {
     "indent": [
