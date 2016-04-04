@@ -18,25 +18,39 @@ body {
     visibility: hidden;
   }
 
-  .nav {
+  nav.sticky-nav-color {
+    width: 100%;
+  }
+
+  .nav-inner-most {
+    align-content: stretch;
     display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .horizontal-ribbon {
-    display: flex;
+    display: none;
+    flex-grow: 1;
     height: 3em;
-    width: 100%;
-    background-color: blue;
+    background-color: yellow;
+    width: 50%;
   }
 
   .horizontal-lmht {
-    display: flex;
+    background-image: url(/img/lmht-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    flex-grow: 1;
     height: 3em;
-    width: 100%;
-    background-color: yellow;
+    margin: 1rem;
+    width: calc(50% - 2rem);
+  }
+
+  .sticky-nav-color .horizontal-ribbon,
+  .sticky-nav-color .horizontal-lmht {
+    display: block;
   }
 }
 
@@ -96,6 +110,11 @@ body {
 
   .bookmark:hover {
     -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
+  }
+
+  .sticky-nav-color .horizontal-ribbon,
+  .sticky-nav-color .horizontal-lmht {
+    display: none;
   }
 }
 
