@@ -32,9 +32,31 @@ body {
   .horizontal-ribbon {
     display: none;
     flex-grow: 1;
-    height: 3em;
     background-color: yellow;
-    width: 50%;
+    width: 15%;
+    position: relative;
+    height:75px;
+    margin: 20px auto;
+    color: black;
+    padding-top: 10px;
+    text-shadow: 0 -1px 0 0;
+    font-size: 13px;
+    font-weight: 900;
+    text-align: center;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+  }
+
+  .horizontal-ribbon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 37.5px solid yellow;
+    border-bottom: 38px solid yellow;
   }
 
   .horizontal-lmht {
@@ -114,6 +136,10 @@ body {
 
   .sticky-nav-color .horizontal-ribbon,
   .sticky-nav-color .horizontal-lmht {
+    display: none;
+  }
+
+  .horizontal-ribbon {
     display: none;
   }
 }
