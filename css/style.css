@@ -52,7 +52,7 @@ body {
     position: absolute;
     top: 0;
     left: -30px;
-    width: 0;
+    width: 10px;
     height: 0;
     border-left: 30px solid transparent;
     border-top: 37.5px solid yellow;
