@@ -37,10 +37,10 @@ var app = {
 
       app.updateURL(url);
       $('.custom-combobox-input').val('');
-
       app.scrollToContent(url);
+      ga('set', 'page', '/' + location.hash.replace('#', ''));
+      ga('send', 'pageview');
     });
-
   },
 
   scrollToContent: function(url) {
