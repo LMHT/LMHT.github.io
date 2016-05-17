@@ -369,6 +369,8 @@ h4 {
 
 .ui-menu {
   z-index: 500;
+  max-height: 350px;
+  overflow: auto;
 }
 
 .fixed-dropdown {
