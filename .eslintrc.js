@@ -25,5 +25,11 @@ module.exports = {
       2,
       "always"
     ]
+    "no-multiple-empty-lines": [
+      "error", {"max": 2}
+    ]
+    "no-lone-blocks": [
+      "error"
+    ]
   },
 };
