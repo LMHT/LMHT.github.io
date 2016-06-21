@@ -24,8 +24,8 @@ module.exports = {
     "semi": [
       "error",
       "always"
-    ]
-    "no-multiple-empty-lines": ["error", {"max": 2}]
+    ],
+    "no-multiple-empty-lines": ["error", {"max": 2}],
     "no-lone-blocks": "error"
   },
 };
