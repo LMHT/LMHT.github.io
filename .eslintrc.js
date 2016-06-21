@@ -8,24 +8,21 @@ module.exports = {
     "ga": true
   },
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
+    "indent": [2, 2],
     "linebreak-style": [
-      "error",
+      2,
       "unix"
     ],
     "no-trailing-spaces": 2,
     "quotes": [
-      "error",
+      2,
       "single"
     ],
     "semi": [
-      "error",
+      2,
       "always"
     ],
-    "no-multiple-empty-lines": ["error", {"max": 2}],
-    "no-lone-blocks": "error"
+    "no-multiple-empty-lines": [2, {"max": 2}],
+    "no-lone-blocks": 2
   },
 };
