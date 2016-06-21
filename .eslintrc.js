@@ -8,10 +8,7 @@ module.exports = {
     "ga": true
   },
   "rules": {
-    "indent": [
-      2,
-      2
-    ],
+    "indent": [2, 2],
     "linebreak-style": [
       2,
       "unix"
@@ -24,6 +21,8 @@ module.exports = {
     "semi": [
       2,
       "always"
-    ]
+    ],
+    "no-multiple-empty-lines": [2, {"max": 2}],
+    "no-lone-blocks": 2
   },
 };
