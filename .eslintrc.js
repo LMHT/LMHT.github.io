@@ -23,6 +23,9 @@ module.exports = {
       "always"
     ],
     "no-multiple-empty-lines": [2, {"max": 2}],
+    "space-in-parens": [2, "never"],
+    "keyword-spacing": [2, { "before": true}],
+    "keyword-spacing": [2, { "after": true}],
     "no-lone-blocks": 2
   },
 };

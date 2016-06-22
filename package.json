@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/adorableio/LMHT#readme",
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^2.13.1"
   }
 }
