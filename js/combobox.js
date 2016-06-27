@@ -24,7 +24,7 @@ $(function() {
 
       this.input = $('<input>')
         .appendTo(this.wrapper)
-        .val( value )
+        .val(value)
         .attr('title', '')
         .addClass('custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left')
         .autocomplete({
@@ -88,7 +88,7 @@ $(function() {
             value: text,
             option: this
           };
-      }) );
+      }));
     },
 
     _removeIfInvalid: function(event, ui) {

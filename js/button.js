@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   audio.onpause = setPause;
 
-  $('body').on( 'click', '.play-button', function(event) {
+  $('body').on('click', '.play-button', function(event) {
     var $button = $(event.target);
     var audioSrc = $button.data('audio-src');
     var isPreviousButton = new RegExp(audioSrc).test(audio.src);
